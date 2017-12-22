@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
-            android:text="How to Learning Android"
+            android:text="Have Fun Build Android Apps"
             android:textColor="#fff" />
     </LinearLayout>
 </RelativeLayout>
