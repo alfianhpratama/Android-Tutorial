@@ -1,19 +1,27 @@
 package alfianagramerry.mobpro.tugasbesar.androidtutorial;
 
+import android.app.Fragment;
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.LessonOne;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.Root.Utama;
+
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     private android.support.v7.widget.Toolbar toolbar;
     private NavigationView navigationView;
     private DrawerLayout drawerLayout;
+    private FragmentManager fragmentManager;
+    private Fragment fragment = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,77 +31,92 @@ public class MainActivity extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        navigationView = findViewById(R.id.navigation_view);
-
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            // This method will trigger on item Click of navigation menu
-            @Override
-            public boolean onNavigationItemSelected(MenuItem menuItem) {
-                if (menuItem.isChecked()) menuItem.setChecked(false);
-                else menuItem.setChecked(true);
-
-                drawerLayout.closeDrawers();
-
-                switch (menuItem.getItemId()) {
-                    case R.id.home_page:
-                        Toast.makeText(getApplicationContext(), "Profil Telah Dipilih", Toast.LENGTH_SHORT).show();
-                        return true;
-                    case R.id.pelajaran1:
-                        Toast.makeText(getApplicationContext(), "Beranda Telah Dipilih", Toast.LENGTH_SHORT).show();
-                        return true;
-                    case R.id.pelajaran2:
-                        Toast.makeText(getApplicationContext(), "Beranda Telah Dipilih", Toast.LENGTH_SHORT).show();
-                        return true;
-                    case R.id.pelajaran3:
-                        Toast.makeText(getApplicationContext(), "Beranda Telah Dipilih", Toast.LENGTH_SHORT).show();
-                        return true;
-                    case R.id.pelajaran4:
-                        Toast.makeText(getApplicationContext(), "Beranda Telah Dipilih", Toast.LENGTH_SHORT).show();
-                        return true;
-                    case R.id.pelajaran5:
-                        Toast.makeText(getApplicationContext(), "Beranda Telah Dipilih", Toast.LENGTH_SHORT).show();
-                        return true;
-                    case R.id.pelajaran6:
-                        Toast.makeText(getApplicationContext(), "Beranda Telah Dipilih", Toast.LENGTH_SHORT).show();
-                        return true;
-                    case R.id.pelajaran7:
-                        Toast.makeText(getApplicationContext(), "Beranda Telah Dipilih", Toast.LENGTH_SHORT).show();
-                        return true;
-                    case R.id.pelajaran8:
-                        Toast.makeText(getApplicationContext(), "Beranda Telah Dipilih", Toast.LENGTH_SHORT).show();
-                        return true;
-                    case R.id.pelajaran9:
-                        Toast.makeText(getApplicationContext(), "Beranda Telah Dipilih", Toast.LENGTH_SHORT).show();
-                        return true;
-                    case R.id.pelajaran10:
-                        Toast.makeText(getApplicationContext(), "Beranda Telah Dipilih", Toast.LENGTH_SHORT).show();
-                        return true;
-                    case R.id.about:
-                        Toast.makeText(getApplicationContext(), "Daftar Telah Dipilih", Toast.LENGTH_SHORT).show();
-                        return true;
-                    default:
-                        Toast.makeText(getApplicationContext(), "Kesalahan Terjadi ", Toast.LENGTH_SHORT).show();
-                        return true;
-                }
-            }
-        });
-
         drawerLayout = findViewById(R.id.drawer);
-        ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.dibuka, R.string.ditutup) {
-            @Override
-            public void onDrawerClosed(View drawerView) {
-                super.onDrawerClosed(drawerView);
-            }
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawerLayout, toolbar, R.string.dibuka, R.string.ditutup);
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
 
-            @Override
-            public void onDrawerOpened(View drawerView) {
-                super.onDrawerOpened(drawerView);
-            }
-        };
+        navigationView = findViewById(R.id.navigation_view);
+        navigationView.setNavigationItemSelectedListener(this);
 
-        drawerLayout.setDrawerListener(actionBarDrawerToggle);
-        actionBarDrawerToggle.syncState();
+        if (savedInstanceState == null) {
+            fragment = new Utama();
+            callFragment(fragment);
+        }
     }
 
+    private void callFragment(android.app.Fragment fragment) {
+        fragmentManager = getFragmentManager();
+        fragmentManager.beginTransaction()
+                .replace(R.id.content, fragment)
+                .commit();
+    }
 
+    @Override
+    public void onBackPressed() {
+        drawerLayout = findViewById(R.id.drawer);
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            drawerLayout.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.nav_menu, menu);
+        return true;
+    }
+
+    @SuppressWarnings("StatementWithEmptyBody")
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.home_page) {
+            fragment = new Utama();
+            callFragment(fragment);
+        } else if (id == R.id.pelajaran1) {
+            fragment = new LessonOne();
+            callFragment(fragment);
+        } else if (id == R.id.pelajaran2) {
+            Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.pelajaran3) {
+            Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.pelajaran4) {
+            Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.pelajaran5) {
+            Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.pelajaran6) {
+            Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.pelajaran7) {
+            Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.pelajaran8) {
+            Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.pelajaran9) {
+            Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.pelajaran10) {
+            Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.about) {
+            Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();
+        }
+
+        drawerLayout = findViewById(R.id.drawer);
+        drawerLayout.closeDrawer(GravityCompat.START);
+        return true;
+    }
+
+   /* @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            Toast.makeText(getApplicationContext(), "Action Settings", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }*/
 }

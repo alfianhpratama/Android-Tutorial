@@ -14,4 +14,7 @@
     <string name="lesson_9">Lesson 9</string>
     <string name="lesson_10">Lesson 10</string>
     <string name="about_us">About Us</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
