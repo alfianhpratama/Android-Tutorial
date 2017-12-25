@@ -1,4 +1,4 @@
-package alfianagramerry.mobpro.tugasbesar.androidtutorial.Demo;
+package alfianagramerry.mobpro.tugasbesar.androidtutorial.Learning;
 
 
 import android.os.Bundle;
@@ -12,10 +12,10 @@ import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class DemoLessonOne extends Fragment {
+public class Learning2 extends Fragment {
 
 
-    public DemoLessonOne() {
+    public Learning2() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class DemoLessonOne extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_demo_lesson_one, container, false);
+        return inflater.inflate(R.layout.fragment_learning2, container, false);
     }
 
 }

@@ -13,7 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.LessonOne;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson1;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Root.Utama;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             fragment = new Utama();
             callFragment(fragment);
         } else if (id == R.id.pelajaran1) {
-            fragment = new LessonOne();
+            fragment = new Lesson1();
             callFragment(fragment);
         } else if (id == R.id.pelajaran2) {
             Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();

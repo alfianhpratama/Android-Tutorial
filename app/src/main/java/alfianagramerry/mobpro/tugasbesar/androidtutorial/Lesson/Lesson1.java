@@ -12,17 +12,17 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.Demo.DemoLessonOne;
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.Learning.LearningLessonOne;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.Demo.Demo1;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.Learning.Learning1;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
-public class LessonOne extends Fragment {
+public class Lesson1 extends Fragment {
 
     private BottomNavigationView bottomNavigation;
     private Fragment fragment;
     private FragmentManager fragmentManager;
 
-    public LessonOne() {
+    public Lesson1() {
     }
 
     @Override
@@ -33,12 +33,13 @@ public class LessonOne extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.activity_lesson_one, container, false);
+        View rootView = inflater.inflate(R.layout.activity_lesson1, container, false);
+        getActivity().setTitle("Lesson 1");
 
         bottomNavigation = rootView.findViewById(R.id.bottom_navigation);
         bottomNavigation.inflateMenu(R.menu.menu_learning);
         fragmentManager = getFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.viewnya, new LearningLessonOne()).commit();
+        fragmentManager.beginTransaction().replace(R.id.viewnya, new Learning1()).commit();
 
         bottomNavigation.setOnNavigationItemSelectedListener(
                 new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -47,10 +48,10 @@ public class LessonOne extends Fragment {
                         int id = item.getItemId();
                         switch (id) {
                             case R.id.learning:
-                                fragment = new LearningLessonOne();
+                                fragment = new Learning1();
                                 break;
                             case R.id.demo:
-                                fragment = new DemoLessonOne();
+                                fragment = new Demo1();
                                 break;
                         }
                         final FragmentTransaction transaction = fragmentManager.beginTransaction();

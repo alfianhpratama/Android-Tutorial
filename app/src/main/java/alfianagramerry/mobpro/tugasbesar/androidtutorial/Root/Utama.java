@@ -15,13 +15,13 @@ import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 public class Utama extends Fragment {
 
     public Utama(){}
-    View rootView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        rootView = inflater.inflate(R.layout.utama, container, false);
+        View rootView = inflater.inflate(R.layout.utama, container, false);
+        getActivity().setTitle("Android Tutorial");
 
         return rootView;
     }

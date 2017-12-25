@@ -19,4 +19,16 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="rate_us">Rate Us</string>
     <string name="version">Version</string>
+    <string name="github_source_code">Github Source Code</string>
+    <string name="android_tutorial">Android Tutorial</string>
+    <string name="title">Title</string>
+
+
+    <string-array name="judul_demo1">
+        <item>Baseball</item>
+        <item>Badminton</item>
+        <item>Basketball</item>
+        <item>Bowling</item>
+        <item>Cycling</item>
+    </string-array>
 </resources>
