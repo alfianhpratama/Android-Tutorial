@@ -13,11 +13,16 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson1;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson2;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson3;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson4;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson5;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Root.Utama;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Root.Version;
 
@@ -34,16 +39,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        toolbar = findViewById(R.id.toolbar);
+        toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        drawerLayout = findViewById(R.id.drawer);
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawerLayout, toolbar, R.string.dibuka, R.string.ditutup);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
-        navigationView = findViewById(R.id.navigation_view);
+        navigationView = (NavigationView)findViewById(R.id.navigation_view);
         navigationView.setNavigationItemSelectedListener(this);
 
         if (savedInstanceState == null) {
@@ -65,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
 
-        if (id == R.id.home_page) {
+     /*   if (id == R.id.home_page) {
             fragment = new Utama();
             callFragment(fragment);
         } else if (id == R.id.pelajaran1) {
@@ -91,16 +96,43 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.about) {
             Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();
+        } */
+
+        switch (id) {
+            case R.id.home_page:
+                fragment = new Utama();
+                callFragment(fragment);
+                break;
+            case R.id.pelajaran1:
+                fragment = new Lesson1();
+                callFragment(fragment);
+                break;
+            case R.id.pelajaran2:
+                fragment = new Lesson2();
+                callFragment(fragment);
+                break;
+            case R.id.pelajaran3:
+                fragment = new Lesson3();
+                callFragment(fragment);
+                break;
+            case R.id.pelajaran4:
+                fragment = new Lesson4();
+                callFragment(fragment);
+                break;
+            case R.id.pelajaran5:
+                fragment = new Lesson5();
+                callFragment(fragment);
+                break;
         }
 
-        drawerLayout = findViewById(R.id.drawer);
+        drawerLayout = (DrawerLayout)findViewById(R.id.drawer);
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
 
     @Override
     public void onBackPressed() {
-        drawerLayout = findViewById(R.id.drawer);
+        drawerLayout = (DrawerLayout)findViewById(R.id.drawer);
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START);
         } else {

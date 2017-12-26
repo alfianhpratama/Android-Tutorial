@@ -50,7 +50,7 @@ public class Data3 extends RecyclerView.Adapter<Data3.ViewHolder> {
 
         private ViewHolder(View itemView) {
             super(itemView);
-            textView = itemView.findViewById(R.id.title);
+            textView = (TextView)itemView.findViewById(R.id.title);
             itemView.setOnClickListener(this);
             context = itemView.getContext();
         }

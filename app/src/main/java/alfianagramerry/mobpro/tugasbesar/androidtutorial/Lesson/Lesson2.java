@@ -37,12 +37,12 @@ public class Lesson2 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.activity_lesson2, container, false);
-        getActivity().setTitle("Lesson 1");
+        getActivity().setTitle("Lesson 2");
 
-        bottomNavigation = rootView.findViewById(R.id.bottom_navigation);
+        bottomNavigation = (BottomNavigationView) rootView.findViewById(R.id.bottom_navigation);
         bottomNavigation.inflateMenu(R.menu.menu_learning);
         fragmentManager = getFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.viewnya, new Learning1()).commit();
+        fragmentManager.beginTransaction().replace(R.id.viewnya, new Learning2()).commit();
 
         bottomNavigation.setOnNavigationItemSelectedListener(
                 new BottomNavigationView.OnNavigationItemSelectedListener() {

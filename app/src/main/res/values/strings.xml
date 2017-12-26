@@ -22,6 +22,12 @@
     <string name="github_source_code">Github Source Code</string>
     <string name="android_tutorial">Android Tutorial</string>
     <string name="title">Title</string>
+    <string name="show">Show</string>
+    <string name="enter_phone">Enter Phone</string>
+    <string name="show_button">show button</string>
+    <string name="phonenumber_label">phonenumber label</string>
+    <string name="nothing_entered">nothing entered</string>
+    <string name="phonenumber">phonenumber</string>
 
 
     <string-array name="judul_demo1">
@@ -31,4 +37,16 @@
         <item>Bowling</item>
         <item>Cycling</item>
     </string-array>
+    <string-array name="labels_array">
+        <item>Home</item>
+        <item>Work</item>
+        <item>Mobile</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="tab_1">Top Stories</string>
+
+    <string name="tab_2">Tech News</string>
+
+    <string name="tab_3">Cooking</string>
 </resources>

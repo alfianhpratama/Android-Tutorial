@@ -36,7 +36,7 @@ public class Lesson1 extends Fragment {
         View rootView = inflater.inflate(R.layout.activity_lesson1, container, false);
         getActivity().setTitle("Lesson 1");
 
-        bottomNavigation = rootView.findViewById(R.id.bottom_navigation);
+        bottomNavigation = (BottomNavigationView)rootView.findViewById(R.id.bottom_navigation);
         bottomNavigation.inflateMenu(R.menu.menu_learning);
         fragmentManager = getFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.viewnya, new Learning1()).commit();

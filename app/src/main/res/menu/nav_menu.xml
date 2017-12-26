@@ -4,57 +4,57 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/home_page"
-            android:icon="@drawable/ic_daftar"
+            android:icon="@drawable/ic_menus"
             android:title="@string/dashboard" />
 
         <item
             android:id="@+id/pelajaran1"
-            android:icon="@drawable/ic_daftar"
+            android:icon="@drawable/ic_menus"
             android:title="@string/lesson_1" />
 
         <item
             android:id="@+id/pelajaran2"
-            android:icon="@drawable/ic_daftar"
+            android:icon="@drawable/ic_menus"
             android:title="@string/lesson_2" />
 
         <item
             android:id="@+id/pelajaran3"
-            android:icon="@drawable/ic_daftar"
+            android:icon="@drawable/ic_menus"
             android:title="@string/lesson_3" />
 
         <item
             android:id="@+id/pelajaran4"
-            android:icon="@drawable/ic_daftar"
+            android:icon="@drawable/ic_menus"
             android:title="@string/lesson_4" />
 
         <item
             android:id="@+id/pelajaran5"
-            android:icon="@drawable/ic_daftar"
+            android:icon="@drawable/ic_menus"
             android:title="@string/lesson_5" />
 
         <item
             android:id="@+id/pelajaran6"
-            android:icon="@drawable/ic_daftar"
+            android:icon="@drawable/ic_menus"
             android:title="@string/lesson_6" />
 
         <item
             android:id="@+id/pelajaran7"
-            android:icon="@drawable/ic_daftar"
+            android:icon="@drawable/ic_menus"
             android:title="@string/lesson_7" />
 
         <item
             android:id="@+id/pelajaran8"
-            android:icon="@drawable/ic_daftar"
+            android:icon="@drawable/ic_menus"
             android:title="@string/lesson_8" />
 
         <item
             android:id="@+id/pelajaran9"
-            android:icon="@drawable/ic_daftar"
+            android:icon="@drawable/ic_menus"
             android:title="@string/lesson_9" />
 
         <item
             android:id="@+id/pelajaran10"
-            android:icon="@drawable/ic_daftar"
+            android:icon="@drawable/ic_menus"
             android:title="@string/lesson_10" />
 
 

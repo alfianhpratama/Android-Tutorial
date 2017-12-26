@@ -12,6 +12,8 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.GyroscopeSensor.GyroscopeSensor;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.KeyboardSamples.KeyboardSamples;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.PhoneNumberSpinner.PhoneNumberSpinner;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
 /**
@@ -50,7 +52,7 @@ public class Data1 extends RecyclerView.Adapter<Data1.ViewHolder> {
 
         private ViewHolder(View itemView) {
             super(itemView);
-            textView = itemView.findViewById(R.id.title);
+            textView = (TextView)itemView.findViewById(R.id.title);
             itemView.setOnClickListener(this);
             context = itemView.getContext();
         }
@@ -69,8 +71,11 @@ public class Data1 extends RecyclerView.Adapter<Data1.ViewHolder> {
                     break;
 
                 case 1:
-                    intent = new Intent(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse("http://www.youtube.com"));
+                    intent = new Intent(context, KeyboardSamples.class);
+                    break;
+
+                case 2:
+                    intent = new Intent(context, PhoneNumberSpinner.class);
                     break;
 
                 default:

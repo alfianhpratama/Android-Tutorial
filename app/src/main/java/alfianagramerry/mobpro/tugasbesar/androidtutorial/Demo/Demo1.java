@@ -38,7 +38,7 @@ public class Demo1 extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_demo1, container, false);
 
-        recyclerView = rootView.findViewById(R.id.recyclerView);
+        recyclerView = (RecyclerView)rootView.findViewById(R.id.recyclerView);
         layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(layoutManager);
         listData  = new ArrayList<>();

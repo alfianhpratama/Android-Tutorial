@@ -31,7 +31,7 @@ public class GyroscopeSensor extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gyroscope_sensor);
         setTitle("Gyroscope Sensor");
-        toolbar = findViewById(R.id.toolbar);
+        toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
