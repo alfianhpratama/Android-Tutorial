@@ -5,8 +5,8 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
-import android.view.ViewGroup;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -18,23 +18,23 @@ import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
  * Created by Alfian Hadi Pratama on 25/12/2017.
  */
 
-public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
+public class Data4 extends RecyclerView.Adapter<Data4.ViewHolder> {
 
     private ArrayList<ListData> listData;
     private Context context;
 
-    public DataAdapter(Context context, ArrayList<ListData> listData) {
+    public Data4(Context context, ArrayList<ListData> listData) {
         this.listData = listData;
         this.context = context;
     }
 
     @Override
-    public DataAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public Data4.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater.from(context).inflate(R.layout.list_view, parent, false));
     }
 
     @Override
-    public void onBindViewHolder(DataAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(Data4.ViewHolder holder, int position) {
         ListData currentData = listData.get(position);
         holder.bindTo(currentData);
     }

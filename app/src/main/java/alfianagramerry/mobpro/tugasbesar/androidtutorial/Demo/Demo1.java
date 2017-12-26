@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.Adapter.DataAdapter;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.Adapter.Data1;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Adapter.ListData;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
@@ -23,7 +23,9 @@ public class Demo1 extends Fragment {
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
     private ArrayList<ListData> listData;
-    private DataAdapter dataAdapter;
+
+    //sesuaikan dengan adapter
+    private Data1 dataAdapter;
 
     public Demo1() {
         // Required empty public constructor
@@ -40,7 +42,7 @@ public class Demo1 extends Fragment {
         layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(layoutManager);
         listData  = new ArrayList<>();
-        dataAdapter = new DataAdapter(getActivity(), listData);
+        dataAdapter = new Data1(getActivity(), listData);
         recyclerView.setAdapter(dataAdapter);
         
         ambilData();
