@@ -123,6 +123,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 fragment = new Lesson5();
                 callFragment(fragment);
                 break;
+            default:
+                Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();
+                break;
         }
 
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer);
