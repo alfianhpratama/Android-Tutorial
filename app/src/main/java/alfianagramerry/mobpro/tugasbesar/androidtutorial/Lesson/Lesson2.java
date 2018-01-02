@@ -3,6 +3,7 @@ package alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
@@ -17,6 +18,8 @@ import alfianagramerry.mobpro.tugasbesar.androidtutorial.Demo.Demo1;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Demo.Demo2;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Learning.Learning1;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Learning.Learning2;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.KeyboardSamples.KeyboardSamples;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.PhoneNumberSpinner.PhoneNumberSpinner;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
 public class Lesson2 extends Fragment {
@@ -37,7 +40,7 @@ public class Lesson2 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.activity_lesson2, container, false);
-        getActivity().setTitle("Lesson 2");
+        getActivity().setTitle("Lesson 2 PhoneNmber Spinner");
 
         bottomNavigation = (BottomNavigationView) rootView.findViewById(R.id.bottom_navigation);
         bottomNavigation.inflateMenu(R.menu.menu_learning);
@@ -49,16 +52,19 @@ public class Lesson2 extends Fragment {
                     @Override
                     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                         int id = item.getItemId();
+                        final Intent intent;
                         switch (id) {
                             case R.id.learning:
-                                fragment = new Learning2();
+                                fragment = new Learning1();
+                                final FragmentTransaction transaction = fragmentManager.beginTransaction();
+                                transaction.replace(R.id.viewnya, fragment).commit();
                                 break;
                             case R.id.demo:
-                                fragment = new Demo2();
+                                intent = new Intent(Lesson2.this.getActivity(), PhoneNumberSpinner.class);
+                                startActivity(intent);
                                 break;
                         }
-                        final FragmentTransaction transaction = fragmentManager.beginTransaction();
-                        transaction.replace(R.id.viewnya, fragment).commit();
+
                         return true;
                     }
                 });

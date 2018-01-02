@@ -23,6 +23,9 @@ import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson2;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson3;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson4;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson5;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson6;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson7;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson8;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Root.Utama;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Root.Version;
 
@@ -69,35 +72,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-
-     /*   if (id == R.id.home_page) {
-            fragment = new Utama();
-            callFragment(fragment);
-        } else if (id == R.id.pelajaran1) {
-            fragment = new Lesson1();
-            callFragment(fragment);
-        } else if (id == R.id.pelajaran2) {
-            Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.pelajaran3) {
-            Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.pelajaran4) {
-            Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.pelajaran5) {
-            Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.pelajaran6) {
-            Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.pelajaran7) {
-            Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.pelajaran8) {
-            Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.pelajaran9) {
-            Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.pelajaran10) {
-            Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.about) {
-            Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();
-        } */
-
         switch (id) {
             case R.id.home_page:
                 fragment = new Utama();
@@ -121,6 +95,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.pelajaran5:
                 fragment = new Lesson5();
+                callFragment(fragment);
+                break;
+            case R.id.pelajaran6:
+                fragment = new Lesson6();
+                callFragment(fragment);
+                break;
+            case R.id.pelajaran7:
+                fragment = new Lesson7();
+                callFragment(fragment);
+                break;
+            case R.id.pelajaran8:
+                fragment = new Lesson8();
                 callFragment(fragment);
                 break;
             default:
