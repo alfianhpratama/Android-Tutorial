@@ -44,12 +44,6 @@
         <item>Other</item>
     </string-array>
 
-    <string name="tab_1">Top Stories</string>
-
-    <string name="tab_2">Tech News</string>
-
-    <string name="tab_3">Cooking</string>
-
     <!--Who Wrote It? -->
     <string name="instructions">Enter a full or partial book name or text from the book. Click Search Books to find out who wrote the book. </string>
     <string name="button_text">Search Books</string>
@@ -123,5 +117,21 @@
         <item>@drawable/img_tennis</item>
     </array>
     <!-- End MaterialMe -->
+
+    <!-- TabLateral -->
+    <string name="hello_blank_fragment2">Hello blank fragment</string>
+    <string name="tab_1">These are the top stories</string>
+    <string name="tab_2">Chat</string>
+    <string name="tab_3">Status</string>
+    <string name="tab_label1">Top Stories</string>
+    <string name="tab_label2">Tech News</string>
+    <string name="tab_label3">Cooking</string>
+    <!-- EndTabLateral -->
+
+    <!--AsyncTask -->
+    <string name="ready_to_start">I am ready to start work!</string>
+    <string name="start_task">Start Task</string>
+    <string name="napping">"Napping…"</string>
+    <!-- Endk AsynTask -->
 
 </resources>

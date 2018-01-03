@@ -3,6 +3,7 @@ package alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
@@ -15,6 +16,8 @@ import android.view.ViewGroup;
 
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Demo.Demo1;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Learning.Learning1;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.AsyncTask.AsyncTask;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.TabLateral.TabLateral;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
 public class Lesson6 extends Fragment {
@@ -47,16 +50,19 @@ public class Lesson6 extends Fragment {
                     @Override
                     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                         int id = item.getItemId();
+                        final Intent intent;
                         switch (id) {
                             case R.id.learning:
                                 fragment = new Learning1();
+                                final FragmentTransaction transaction = fragmentManager.beginTransaction();
+                                transaction.replace(R.id.viewnya, fragment).commit();
                                 break;
                             case R.id.demo:
-                                fragment = new Demo1();
+                                intent = new Intent(Lesson6.this.getActivity(), AsyncTask.class);
+                                startActivity(intent);
                                 break;
                         }
-                        final FragmentTransaction transaction = fragmentManager.beginTransaction();
-                        transaction.replace(R.id.viewnya, fragment).commit();
+
                         return true;
                     }
                 });

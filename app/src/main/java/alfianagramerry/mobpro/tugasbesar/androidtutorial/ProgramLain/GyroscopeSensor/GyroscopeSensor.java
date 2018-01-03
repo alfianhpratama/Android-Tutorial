@@ -20,7 +20,7 @@ import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
 public class GyroscopeSensor extends AppCompatActivity {
 
-    private static final String TAG = "MainActivity";
+    private static final String TAG = "TabLateral";
     private SensorManager sensorManager;
     private Sensor gyroscopeSensor;
     private String a;

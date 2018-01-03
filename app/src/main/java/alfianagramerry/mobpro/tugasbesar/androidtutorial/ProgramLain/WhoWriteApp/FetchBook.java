@@ -14,28 +14,28 @@ package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.WhoWriteAp
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-        import android.net.Uri;
-        import android.os.AsyncTask;
-        import android.widget.EditText;
-        import android.widget.TextView;
 
-        import org.json.JSONArray;
-        import org.json.JSONObject;
+import android.net.Uri;
+import android.os.AsyncTask;
+import android.widget.EditText;
+import android.widget.TextView;
 
-        import java.io.BufferedReader;
-        import java.io.IOException;
-        import java.io.InputStream;
-        import java.io.InputStreamReader;
-        import java.net.HttpURLConnection;
-        import java.net.URL;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
-        import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
 /**
  * AsyncTask implementation that opens a network connection and
  * query's the Book Service API.
  */
-public class FetchBook extends AsyncTask<String,Void,String>{
+public class FetchBook extends AsyncTask<String, Void, String> {
 
     // Variables for the search input field, and results TextViews
     private EditText mBookInput;
@@ -58,7 +58,7 @@ public class FetchBook extends AsyncTask<String,Void,String>{
      *
      * @param params String array containing the search data.
      * @return Returns the JSON string from the Books API or
-     *         null if the connection failed.
+     * null if the connection failed.
      */
     @Override
     protected String doInBackground(String... params) {
@@ -75,7 +75,7 @@ public class FetchBook extends AsyncTask<String,Void,String>{
         // Attempt to query the Books API.
         try {
             // Base URI for the Books API.
-            final String BOOK_BASE_URL =  "https://www.googleapis.com/books/v1/volumes?";
+            final String BOOK_BASE_URL = "https://www.googleapis.com/books/v1/volumes?";
 
             final String QUERY_PARAM = "q"; // Parameter for the search string.
             final String MAX_RESULTS = "maxResults"; // Parameter that limits search results.
@@ -173,7 +173,7 @@ public class FetchBook extends AsyncTask<String,Void,String>{
                 try {
                     title = volumeInfo.getString("title");
                     authors = volumeInfo.getString("authors");
-                } catch (Exception e){
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
 
@@ -182,7 +182,7 @@ public class FetchBook extends AsyncTask<String,Void,String>{
             }
 
             // If both are found, display the result.
-            if (title != null && authors != null){
+            if (title != null && authors != null) {
                 mTitleText.setText(title);
                 mAuthorText.setText(authors);
                 mBookInput.setText("");
@@ -192,7 +192,7 @@ public class FetchBook extends AsyncTask<String,Void,String>{
                 mAuthorText.setText("");
             }
 
-        } catch (Exception e){
+        } catch (Exception e) {
             // If onPostExecute does not receive a proper JSON string,
             // update the UI to show failed results.
             mTitleText.setText(R.string.no_results);

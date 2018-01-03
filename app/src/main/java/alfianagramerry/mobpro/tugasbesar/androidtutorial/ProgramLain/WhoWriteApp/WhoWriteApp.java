@@ -15,17 +15,16 @@ package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.WhoWriteAp
  * limitations under the License.
  */
 
-        import android.content.Context;
-        import android.net.ConnectivityManager;
-        import android.net.NetworkInfo;
-        import android.os.Bundle;
-        import android.support.v7.app.AppCompatActivity;
-        import android.view.View;
-        import android.view.inputmethod.InputMethodManager;
-        import android.widget.EditText;
-        import android.widget.TextView;
-
-        import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.EditText;
+import android.widget.TextView;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
 /**
  * The WhoWroteIt app query's the Book Search API for Books based
@@ -47,12 +46,12 @@ public class WhoWriteApp extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.whowriteapp_activity_main);
 
         // Initialize all the view variables.
-        mBookInput = (EditText)findViewById(R.id.bookInput);
-        mTitleText = (TextView)findViewById(R.id.titleText);
-        mAuthorText = (TextView)findViewById(R.id.authorText);
+        mBookInput = (EditText) findViewById(R.id.bookInput);
+        mTitleText = (TextView) findViewById(R.id.titleText);
+        mAuthorText = (TextView) findViewById(R.id.authorText);
     }
 
     /**
@@ -76,7 +75,7 @@ public class WhoWriteApp extends AppCompatActivity {
         NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
 
         // If the network is active and the search field is not empty, start a FetchBook AsyncTask.
-        if (networkInfo != null && networkInfo.isConnected() && queryString.length()!=0) {
+        if (networkInfo != null && networkInfo.isConnected() && queryString.length() != 0) {
             new FetchBook(mTitleText, mAuthorText, mBookInput).execute(queryString);
         }
         // Otherwise update the TextView to tell the user there is no connection or no search term.

@@ -12,6 +12,7 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -47,6 +48,7 @@
         <activity android:name=".ProgramLain.MaterialMe.MaterialMe" />
         <activity android:name=".ProgramLain.MaterialMe.DetailActivity"/>
         <activity android:name=".ProgramLain.AlertSample.AlertSample" />
+        <activity android:name=".ProgramLain.TabLateral.TabLateral" />
         <activity android:name=".ProgramLain.AsyncTask.AsyncTask" />
         <activity android:name=".ProgramLain.Maps_Android.Maps_Android" />
         <activity android:name=".ProgramLain.PhoneNumberSpinner.PhoneNumberSpinner" />
