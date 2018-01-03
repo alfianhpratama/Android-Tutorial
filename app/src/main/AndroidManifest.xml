@@ -52,7 +52,6 @@
         <activity android:name=".ProgramLain.TabLateral.TabLateral" />
         <activity android:name=".ProgramLain.AsyncTask.AsyncTask" />
         <activity android:name=".ProgramLain.NotifyMe.NotifyMe" />
-        <activity android:name=".ProgramLain.Maps_Android.Maps_Android" />
         <activity android:name=".ProgramLain.PhoneNumberSpinner.PhoneNumberSpinner" />
         <activity android:name=".ProgramLain.TabExperiment.TabExperiment" />
         <activity android:name=".ProgramLain.WhoWriteApp.WhoWriteApp"></activity>
