@@ -14,10 +14,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.Demo.Demo1;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Learning.Learning1;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.AsyncTask.AsyncTask;
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.TabLateral.TabLateral;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
 public class Lesson6 extends Fragment {

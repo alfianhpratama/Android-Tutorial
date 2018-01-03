@@ -13,10 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.Demo.Demo2;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Learning.Learning1;
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.Learning.Learning2;
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.TabLateral.TabLateral;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.WhoWriteApp.WhoWriteApp;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
