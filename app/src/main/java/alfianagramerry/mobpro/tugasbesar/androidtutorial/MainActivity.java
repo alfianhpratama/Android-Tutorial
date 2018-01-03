@@ -26,6 +26,7 @@ import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson5;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson6;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson7;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson8;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson9;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Root.Utama;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Root.Version;
 
@@ -107,6 +108,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.pelajaran8:
                 fragment = new Lesson8();
+                callFragment(fragment);
+                break;
+            case R.id.pelajaran9:
+                fragment = new Lesson9();
                 callFragment(fragment);
                 break;
             default:
