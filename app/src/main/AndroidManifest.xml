@@ -59,6 +59,8 @@
         <activity android:name=".ProgramLain.DateTimePicker.DateTimePicker" />
         <activity android:name=".ProgramLain.DroidCafe.DroidCafe"/>
         <activity android:name=".ProgramLain.DroidCafe.OrderActivity"/>
+        <activity android:name=".ProgramLain.TwoActivities.TwoActivities"/>
+        <activity android:name=".ProgramLain.TwoActivities.SecondActivity"/>
     </application>
 
 </manifest>

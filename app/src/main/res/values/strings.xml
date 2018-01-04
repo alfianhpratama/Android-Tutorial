@@ -185,6 +185,16 @@
     <string name="action_contact_message">You selected Contact.</string>
     <string name="google_mtv_coord_zoom12">geo:37.422114,-122.086744?z=12</string>
     <string name="nothing_clicked">onRadioButtonClicked: Nothing clicked.</string>
+    <!-- End DroidCafe -->
 
+    <!-- TwoActivities -->
+    <string name="button_main">Send</string>
+    <string name="activity2_name">Second Activity</string>
+    <string name="text_header">Message Received</string>
+    <string name="editText_main">Enter Your Message Here</string>
+    <string name="button_second">Reply</string>
+    <string name="editText_second">Enter Your Reply Here</string>
+    <string name="text_header_reply">Reply Received</string>
+    <!-- End TwoActivities -->
 
 </resources>
