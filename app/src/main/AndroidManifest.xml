@@ -57,6 +57,8 @@
         <activity android:name=".ProgramLain.TabExperiment.TabExperiment" />
         <activity android:name=".ProgramLain.WhoWriteApp.WhoWriteApp" />
         <activity android:name=".ProgramLain.DateTimePicker.DateTimePicker" />
+        <activity android:name=".ProgramLain.DroidCafe.DroidCafe"/>
+        <activity android:name=".ProgramLain.DroidCafe.OrderActivity"/>
     </application>
 
 </manifest>

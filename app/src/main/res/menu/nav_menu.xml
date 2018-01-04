@@ -56,6 +56,22 @@
             android:id="@+id/pelajaran10"
             android:icon="@drawable/ic_menus"
             android:title="@string/lesson_10" />
+        <item
+            android:id="@+id/pelajaran11"
+            android:icon="@drawable/ic_menus"
+            android:title="@string/lesson_11" />
+        <item
+            android:id="@+id/pelajaran12"
+            android:icon="@drawable/ic_menus"
+            android:title="@string/lesson_12" />
+        <item
+            android:id="@+id/pelajaran13"
+            android:icon="@drawable/ic_menus"
+            android:title="@string/lesson_13" />
+        <item
+            android:id="@+id/pelajaran14"
+            android:icon="@drawable/ic_menus"
+            android:title="@string/lesson_14" />
 
 
     </group>
