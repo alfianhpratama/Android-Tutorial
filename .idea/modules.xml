@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial.iml" filepath="$PROJECT_DIR$/Android-Tutorial.iml" />
+      <module fileurl="file://E:\Latihan\Android\Android-Tutorial1\Android-Tutorial.iml" filepath="E:\Latihan\Android\Android-Tutorial1\Android-Tutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial1.iml" filepath="$PROJECT_DIR$/Android-Tutorial1.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

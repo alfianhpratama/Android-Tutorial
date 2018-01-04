@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.KeyboardSamples.KeyboardSamples;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.PhoneNumberSpinner.PhoneNumberSpinner;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
 public class Lesson1 extends Fragment implements View.OnClickListener {
@@ -28,7 +29,7 @@ public class Lesson1 extends Fragment implements View.OnClickListener {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.activity_lesson, container, false);
-        getActivity().setTitle("Lesson 1 Keyboard Sample");
+        getActivity().setTitle("Lesson 1 KeyboardSample");
 
         demo = rootView.findViewById(R.id.menuju_demo);
         demo.setOnClickListener(this);
@@ -37,8 +38,7 @@ public class Lesson1 extends Fragment implements View.OnClickListener {
     }
 
     public void onClick(View v) {
-        Intent intent = new Intent(Lesson1.this.getActivity(), KeyboardSamples.class);
+        Intent intent = new Intent(this.getActivity(), KeyboardSamples.class);
         startActivity(intent);
     }
-
 }
