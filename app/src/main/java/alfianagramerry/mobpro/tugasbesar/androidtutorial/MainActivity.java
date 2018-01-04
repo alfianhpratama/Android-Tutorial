@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private android.support.v7.widget.Toolbar toolbar;
     private NavigationView navigationView;
-    private DrawerLayout drawerLayout = (DrawerLayout)findViewById(R.id.drawer);
+    private DrawerLayout drawerLayout;
     private FragmentManager fragmentManager;
     private Fragment fragment = null;
 

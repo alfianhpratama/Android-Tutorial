@@ -9,7 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.KeyboardSamples.KeyboardSamples;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.AlertSample.AlertSample;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
 public class Lesson3 extends Fragment implements View.OnClickListener {
@@ -37,7 +37,7 @@ public class Lesson3 extends Fragment implements View.OnClickListener {
     }
 
     public void onClick(View v) {
-        Intent intent = new Intent(this.getActivity(), KeyboardSamples.class);
+        Intent intent = new Intent(this.getActivity(), AlertSample.class);
         startActivity(intent);
     }
 }
