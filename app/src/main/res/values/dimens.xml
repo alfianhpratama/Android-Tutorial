@@ -6,4 +6,5 @@
     <dimen name="activity_horizontal_margin">12dp</dimen>
     <!--dimen MaterialMe -->
     <dimen name="card_margin">8dp</dimen>
+    <dimen name="dimen_24_dp">24dp</dimen>
 </resources>

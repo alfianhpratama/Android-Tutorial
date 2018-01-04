@@ -34,9 +34,9 @@ public class Lesson9 extends Fragment{
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.activity_lesson2, container, false);
+        View rootView = inflater.inflate(R.layout.activity_lesson, container, false);
         getActivity().setTitle("Lesson 9 RecyclerView");
-
+/*
         bottomNavigation = (BottomNavigationView) rootView.findViewById(R.id.bottom_navigation);
         bottomNavigation.inflateMenu(R.menu.menu_learning);
         fragmentManager = getFragmentManager();
@@ -63,7 +63,7 @@ public class Lesson9 extends Fragment{
                         return true;
                     }
                 });
-
+*/
         return rootView;
     }
 }

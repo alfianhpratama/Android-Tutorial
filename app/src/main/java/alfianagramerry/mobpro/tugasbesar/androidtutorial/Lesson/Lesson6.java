@@ -35,9 +35,9 @@ public class Lesson6 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.activity_lesson3, container, false);
+        View rootView = inflater.inflate(R.layout.activity_lesson, container, false);
         getActivity().setTitle("Lesson 6");
-
+/*
         bottomNavigation = (BottomNavigationView)rootView.findViewById(R.id.bottom_navigation);
         bottomNavigation.inflateMenu(R.menu.menu_learning);
         fragmentManager = getFragmentManager();
@@ -63,7 +63,7 @@ public class Lesson6 extends Fragment {
 
                         return true;
                     }
-                });
+                });*/
 
         return rootView;
     }

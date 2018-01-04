@@ -15,6 +15,7 @@
   limitations under the License.
   -->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -31,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end|right"
         android:layout_margin="@dimen/activity_horizontal_margin"
-        android:src="@drawable/ic_reset"
+        app:srcCompat="@drawable/ic_reset"
         android:tint="@android:color/white"
         android:onClick="resetSports"/>
 
