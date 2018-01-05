@@ -40,8 +40,8 @@ public class Lesson1 extends Fragment implements View.OnClickListener {
     }
 
     public void onClick(View v) {
-        PopupMenu popupMenu = new PopupMenu(this.getActivity(),demo);
-        popupMenu.getMenuInflater().inflate(R.menu.git_menu,popupMenu.getMenu());
+        PopupMenu popupMenu = new PopupMenu(this.getActivity(), demo);
+        popupMenu.getMenuInflater().inflate(R.menu.git_menu, popupMenu.getMenu());
         popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {

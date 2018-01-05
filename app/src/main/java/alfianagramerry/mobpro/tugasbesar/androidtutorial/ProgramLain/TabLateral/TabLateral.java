@@ -1,9 +1,5 @@
 package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.TabLateral;
 
-/**
- * Created by Agra on 03/01/2018.
- */
-
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -15,14 +11,14 @@ public class TabLateral extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tablateral_activity_main);
 
         //	Create	an	instance	of	the	tab	layout	from	the	view.
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
+        TabLayout tabLayout = findViewById(R.id.tab_layout);
         //	Set	the	text	for	each	tab.
         tabLayout.addTab(tabLayout.newTab().setText(R.string.tab_label1));
         tabLayout.addTab(tabLayout.newTab().setText(R.string.tab_label2));
@@ -34,7 +30,7 @@ public class TabLateral extends AppCompatActivity {
         //	Using	PagerAdapter	to	manage	page	views	in	fragments.
         // 	Each	page	is	represented	by	its	own	fragment.
         // 	This	is	another	example	of	the	adapter	pattern.
-        final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
+        final ViewPager viewPager = findViewById(R.id.pager);
         final PagerAdapter adapter = new PagerAdapter
                 (getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(adapter);

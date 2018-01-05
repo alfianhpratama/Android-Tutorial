@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="90dp"
     android:background="@color/colorPrimary"
     android:orientation="vertical">
-
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -14,7 +14,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_gravity="bottom"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
 
         <TextView
             android:id="@+id/name"
@@ -22,16 +23,20 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="16dp"
-            android:text="Mobile Programming"
-            android:textColor="#fff"
-            android:textStyle="bold" />
+            android:text="@string/judul_navigation"
+            android:textColor="#ff444f"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
-            android:text="Have Fun Build Android Apps"
-            android:textColor="#fff" />
+            android:text="@string/little_desc"
+            android:textColor="#fff"
+            tools:ignore="RtlHardcoded" />
     </LinearLayout>
+
 </RelativeLayout>
