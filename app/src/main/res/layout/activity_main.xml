@@ -3,41 +3,54 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer"
-    style="@style/ThemeOverlay.AppCompat.Light"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="alfianagramerry.mobpro.tugasbesar.androidtutorial.MainActivity">
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
 
-    <LinearLayout
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinat"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:measureWithLargestChild="false"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
         <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <include
-                android:id="@+id/toolbar"
-                layout="@layout/nav_toolbar" />
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:fitsSystemWindows="true"
+                app:layout_scrollFlags="scroll|enterAlways"  >
+
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/nav_toolbar"
+                    app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
 
         </android.support.design.widget.AppBarLayout>
 
-        <LinearLayout
+        <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-            <FrameLayout
-                android:id="@+id/content"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            </FrameLayout>
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-        </LinearLayout>
+                <FrameLayout
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
 
-    </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
 
     <android.support.design.widget.NavigationView
         android:id="@+id/navigation_view"
@@ -46,8 +59,6 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header"
-        app:menu="@menu/nav_menu">
-
-    </android.support.design.widget.NavigationView>
+        app:menu="@menu/nav_menu" />
 
 </android.support.v4.widget.DrawerLayout>

@@ -37,14 +37,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity
-            android:name=".Root.Version"
-            android:parentActivityName=".MainActivity"
-            tools:targetApi="jelly_bean">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
         <activity android:name=".ProgramLain.KeyboardSamples.KeyboardSamples" />
         <activity android:name=".ProgramLain.MaterialMe.MaterialMe" />
         <activity android:name=".ProgramLain.MaterialMe.DetailActivity" />
@@ -54,7 +46,6 @@
         <activity android:name=".ProgramLain.NotifyMe.NotifyMe" />
         <activity android:name=".ProgramLain.RecyclerView.Recycler" />
         <activity android:name=".ProgramLain.PhoneNumberSpinner.PhoneNumberSpinner" />
-        <activity android:name=".ProgramLain.TabExperiment.TabExperiment" />
         <activity android:name=".ProgramLain.WhoWriteApp.WhoWriteApp" />
         <activity android:name=".ProgramLain.DateTimePicker.DateTimePicker" />
         <activity android:name=".ProgramLain.DroidCafe.DroidCafe"/>
