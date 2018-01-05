@@ -6,11 +6,13 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.PopupMenu;
+import android.widget.Toast;
 
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.KeyboardSamples.KeyboardSamples;
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.PhoneNumberSpinner.PhoneNumberSpinner;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
 public class Lesson1 extends Fragment implements View.OnClickListener {
@@ -38,7 +40,16 @@ public class Lesson1 extends Fragment implements View.OnClickListener {
     }
 
     public void onClick(View v) {
-        Intent intent = new Intent(this.getActivity(), KeyboardSamples.class);
-        startActivity(intent);
+        PopupMenu popupMenu = new PopupMenu(this.getActivity(),demo);
+        popupMenu.getMenuInflater().inflate(R.menu.git_menu,popupMenu.getMenu());
+        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem menuItem) {
+                Intent intent = new Intent(getActivity(), KeyboardSamples.class);
+                startActivity(intent);
+                return true;
+            }
+        });
+        popupMenu.show();
     }
 }

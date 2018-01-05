@@ -7,72 +7,87 @@
             android:icon="@drawable/ic_menus"
             android:title="@string/dashboard" />
 
-        <item
-            android:id="@+id/pelajaran1"
-            android:icon="@drawable/ic_menus"
-            android:title="@string/lesson_1" />
+        <item android:title="Get Started">
+            <menu>
 
-        <item
-            android:id="@+id/pelajaran2"
-            android:icon="@drawable/ic_menus"
-            android:title="@string/lesson_2" />
+                <item
+                    android:id="@+id/pelajaran1"
+                    android:icon="@drawable/ic_menus"
+                    android:title="@string/lesson_1" />
 
-        <item
-            android:id="@+id/pelajaran3"
-            android:icon="@drawable/ic_menus"
-            android:title="@string/lesson_3" />
+                <item
+                    android:id="@+id/pelajaran2"
+                    android:icon="@drawable/ic_menus"
+                    android:title="@string/lesson_2" />
 
-        <item
-            android:id="@+id/pelajaran4"
-            android:icon="@drawable/ic_menus"
-            android:title="@string/lesson_4" />
+                <item
+                    android:id="@+id/pelajaran3"
+                    android:icon="@drawable/ic_menus"
+                    android:title="@string/lesson_3" />
 
-        <item
-            android:id="@+id/pelajaran5"
-            android:icon="@drawable/ic_menus"
-            android:title="@string/lesson_5" />
+            </menu>
+        </item>
 
-        <item
-            android:id="@+id/pelajaran6"
-            android:icon="@drawable/ic_menus"
-            android:title="@string/lesson_6" />
+        <item android:title="Experinces">
+            <menu>
 
-        <item
-            android:id="@+id/pelajaran7"
-            android:icon="@drawable/ic_menus"
-            android:title="@string/lesson_7" />
+                <item
+                    android:id="@+id/pelajaran4"
+                    android:icon="@drawable/ic_menus"
+                    android:title="@string/lesson_4" />
 
-        <item
-            android:id="@+id/pelajaran8"
-            android:icon="@drawable/ic_menus"
-            android:title="@string/lesson_8" />
+                <item
+                    android:id="@+id/pelajaran5"
+                    android:icon="@drawable/ic_menus"
+                    android:title="@string/lesson_5" />
 
-        <item
-            android:id="@+id/pelajaran9"
-            android:icon="@drawable/ic_menus"
-            android:title="@string/lesson_9" />
+                <item
+                    android:id="@+id/pelajaran6"
+                    android:icon="@drawable/ic_menus"
+                    android:title="@string/lesson_6" />
 
-        <item
-            android:id="@+id/pelajaran10"
-            android:icon="@drawable/ic_menus"
-            android:title="@string/lesson_10" />
-        <item
-            android:id="@+id/pelajaran11"
-            android:icon="@drawable/ic_menus"
-            android:title="@string/lesson_11" />
-        <item
-            android:id="@+id/pelajaran12"
-            android:icon="@drawable/ic_menus"
-            android:title="@string/lesson_12" />
-        <item
-            android:id="@+id/pelajaran13"
-            android:icon="@drawable/ic_menus"
-            android:title="@string/lesson_13" />
-        <item
-            android:id="@+id/pelajaran14"
-            android:icon="@drawable/ic_menus"
-            android:title="@string/lesson_14" />
+            </menu>
+        </item>
 
+        <item android:title="Working in the Background">
+            <menu>
+
+                <item
+                    android:id="@+id/pelajaran7"
+                    android:icon="@drawable/ic_menus"
+                    android:title="@string/lesson_7" />
+
+                <item
+                    android:id="@+id/pelajaran8"
+                    android:icon="@drawable/ic_menus"
+                    android:title="@string/lesson_8" />
+
+            </menu>
+        </item>
+
+        <item android:title="All About Data">
+            <menu>
+
+                <item
+                    android:id="@+id/pelajaran9"
+                    android:icon="@drawable/ic_menus"
+                    android:title="@string/lesson_9" />
+
+                <item
+                    android:id="@+id/pelajaran10"
+                    android:icon="@drawable/ic_menus"
+                    android:title="@string/lesson_10" />
+                <item
+                    android:id="@+id/pelajaran11"
+                    android:icon="@drawable/ic_menus"
+                    android:title="@string/lesson_11" />
+                <item
+                    android:id="@+id/pelajaran12"
+                    android:icon="@drawable/ic_menus"
+                    android:title="@string/lesson_12" />
+
+            </menu>
+        </item>
 
     </group>
 
