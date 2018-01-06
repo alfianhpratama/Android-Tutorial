@@ -18,6 +18,11 @@
     <string name="lesson_13">Lesson 13</string>
     <string name="lesson_14">Lesson 14</string>
     <string name="about_us">About Us</string>
+    <!-- Isi konten -->
+    <string name="isi_keyboardsample">Dalam praktik ini, Anda akan membuat dan membangun aplikasi baru yang bernama Keyboard Samples untuk bereksperimen dengan dengan atribut android:inputType untuk elemen UI EditText. Anda akan mengubah keyboard sehingga akan menyarankan pembetulan ejaan dan mengubah kapitalisasi setiap kalimat, seperti yang ditampilkan di sebelah kiri gambar di bawah ini. Untuk menyederhanakan aplikasi, Anda akan menampilkan teks yang dimasukkan dalam pesan toast.
+Anda juga akan mengubah keyboard menjadi keyboard yang menampilkan simbol "@" di lokasi yang umum untuk memasukkan alamat email, dan menjadi keypad ponsel untuk memasukkan nomor telepon, seperti yang ditampilkan di sebelah kiri dan di tengah gambar di bawah ini. Sebagai tantangan, Anda akan mengimplementasikan listener untuk kunci tindakan di keyboard untuk mengirimkan intent yang implisit ke aplikasi lain untuk memutar nomor telepon.
+</string>
+    <!-- End Isi Konten -->
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -74,7 +79,7 @@
         vitae semper quam. In a metus ut nisl pharetra hendrerit et a leo. Curabitur nec sapien
         odio. Vestibulum a mollis felis. Cras molestie felis nibh, ut maximus mauris feugiat
         tincidunt. Curabitur ultricies eros sed ipsum pulvinar vehicula. Maecenas volutpat,
-        massa sit amet aliquam eleifend, massa lorem tempor sapien, eget finibus massa dolor
+1        massa sit amet aliquam eleifend, massa lorem tempor sapien, eget finibus massa dolor
         molestie lorem. Suspendisse at purus mauris. Proin nibh ligula, suscipit vel pharetra
         posuere, bibendum id lorem.</string>
 

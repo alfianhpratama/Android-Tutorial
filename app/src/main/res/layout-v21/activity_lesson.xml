@@ -10,20 +10,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical" >
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@mipmap/ic_launcher"
-            android:contentDescription="@string/gambar" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <com.github.barteksc.pdfviewer.PDFView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:text="@string/android_tutorial"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:id="@+id/pdfView" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -34,15 +26,16 @@
     </LinearLayout>
 
     <android.support.design.widget.FloatingActionButton
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/menuju_demo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:backgroundTint="@color/colorPrimary"
         android:layout_margin="@dimen/dimen_24_dp"
         android:tint="@android:color/white"
         android:layout_alignParentEnd="true"
+        app:backgroundTint="@color/colorPrimary"
         tools:ignore="RtlHardcoded" />
 
 </RelativeLayout>

@@ -1,6 +1,6 @@
 package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.MaterialMe;
 
-/**
+/*
  * edited by Agra on 02/01/2018.
  */
 
@@ -49,8 +49,8 @@ public class DetailActivity extends AppCompatActivity {
         setContentView(R.layout.materialme_activity_detail);
 
         //Initialize the views
-        TextView sportsTitle = (TextView) findViewById(R.id.titleDetail);
-        ImageView sportsImage = (ImageView) findViewById(R.id.sportsImageDetail);
+        TextView sportsTitle = findViewById(R.id.titleDetail);
+        ImageView sportsImage = findViewById(R.id.sportsImageDetail);
 
         //Get the drawable
         Drawable drawable = ContextCompat.getDrawable

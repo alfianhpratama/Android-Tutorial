@@ -70,11 +70,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 .commit();
     }
 
-
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
+        Bundle args = new Bundle();
         switch (id) {
             case R.id.home_page:
                 fragment = new Utama();
