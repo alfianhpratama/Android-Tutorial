@@ -8,11 +8,13 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -34,11 +36,12 @@ import alfianagramerry.mobpro.tugasbesar.androidtutorial.Root.Version;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
-    private android.support.v7.widget.Toolbar toolbar;
+    private Toolbar toolbar;
     private NavigationView navigationView;
     private DrawerLayout drawerLayout;
     private FragmentManager fragmentManager;
     private Fragment fragment = null;
+    private CollapsingToolbarLayout cc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
