@@ -32,9 +32,8 @@ public class Lesson2 extends Fragment implements View.OnClickListener, OnPageCha
         super.onCreate(savedInstanceState);
 
     }
-    private static final String TAG = PdfView.class.getSimpleName();
-    public static final String SAMPLE_FILE = "Sample01.pdf";
-    final String title = "Sample01";
+    public static final String SAMPLE_FILE = "PhoneNumberSpinner.pdf";
+    final String title = "Phone Number Spinner";
     PDFView pdfView;
     Integer pageNumber = 0;
     String pdfFileName;
@@ -88,8 +87,6 @@ public class Lesson2 extends Fragment implements View.OnClickListener, OnPageCha
 
     public void printBookmarksTree(List<PdfDocument.Bookmark> tree, String sep) {
         for (PdfDocument.Bookmark b : tree) {
-
-            Log.e(TAG, String.format("%s %s, p %d", sep, b.getTitle(), b.getPageIdx()));
 
             if (b.hasChildren()) {
                 printBookmarksTree(b.getChildren(), sep + "-");
