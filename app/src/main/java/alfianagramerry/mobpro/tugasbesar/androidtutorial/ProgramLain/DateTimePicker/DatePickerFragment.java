@@ -1,6 +1,6 @@
 package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.DateTimePicker;
 
-/**
+/*
  * Edited by Merry on 04/01/2018.
  */
 
@@ -30,8 +30,6 @@ package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.DateTimePi
         import android.widget.DatePicker;
 
         import java.util.Calendar;
-
-        import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson10;
 
 /**
  * A simple {@link Fragment} subclass for the date picker.

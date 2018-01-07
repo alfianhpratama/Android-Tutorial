@@ -19,18 +19,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson1;
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson2;
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson3;
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson4;
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson5;
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson6;
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson7;
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson8;
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson9;
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson10;
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson11;
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson12;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Root.Utama;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Root.Version;
 
@@ -41,7 +30,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private DrawerLayout drawerLayout;
     private FragmentManager fragmentManager;
     private Fragment fragment = null;
-    private CollapsingToolbarLayout cc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,60 +65,122 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-        Bundle args = new Bundle();
+        Bundle key = new Bundle();
+
         switch (id) {
             case R.id.home_page:
                 fragment = new Utama();
                 callFragment(fragment);
                 break;
+
             case R.id.pelajaran1:
-                fragment = new Lesson1();
+                fragment = new Lesson();
+                key.putString("title","Keyboard Samples");
+                key.putString("pdf","KeyboardSamples.pdf");
+                key.putString("app", "KeyboardSamples");
+                fragment.setArguments(key);
                 callFragment(fragment);
                 break;
+
             case R.id.pelajaran2:
-                fragment = new Lesson2();
+                fragment = new Lesson();
+                key.putString("title","Phone Number Spinner");
+                key.putString("pdf","PhoneNumberSpinner.pdf");
+                key.putString("app", "PhoneNumberSpinner");
+                fragment.setArguments(key);
                 callFragment(fragment);
                 break;
+
             case R.id.pelajaran3:
-                fragment = new Lesson3();
+                fragment = new Lesson();
+                key.putString("title","Alert Sample");
+                key.putString("pdf","AlertSample.pdf");
+                key.putString("app", "AlertSample");
+                fragment.setArguments(key);
                 callFragment(fragment);
                 break;
+
             case R.id.pelajaran4:
-                fragment = new Lesson4();
+                fragment = new Lesson();
+                key.putString("title","Material Me");
+                key.putString("pdf","MaterialMe.pdf");
+                key.putString("app", "MaterialMe");
+                fragment.setArguments(key);
                 callFragment(fragment);
                 break;
+
             case R.id.pelajaran5:
-                fragment = new Lesson5();
+                fragment = new Lesson();
+                key.putString("title","Tab Lateral");
+                key.putString("pdf","TabLateral.pdf");
+                key.putString("app", "TabLateral");
+                fragment.setArguments(key);
                 callFragment(fragment);
                 break;
+
             case R.id.pelajaran6:
-                fragment = new Lesson6();
+                fragment = new Lesson();
+                key.putString("title","Async Task");
+                key.putString("pdf","AsyncTask.pdf");
+                key.putString("app", "AsyncTask");
+                fragment.setArguments(key);
                 callFragment(fragment);
                 break;
+
             case R.id.pelajaran7:
-                fragment = new Lesson7();
+                fragment = new Lesson();
+                key.putString("title","Who Write App");
+                key.putString("pdf","WhoWriteApp.pdf");
+                key.putString("app", "WhoWriteApp");
+                fragment.setArguments(key);
                 callFragment(fragment);
                 break;
+
             case R.id.pelajaran8:
-                fragment = new Lesson8();
+                fragment = new Lesson();
+                key.putString("title","Notify Me");
+                key.putString("pdf","NotifyMe.pdf");
+                key.putString("app", "NotifyMe");
+                fragment.setArguments(key);
                 callFragment(fragment);
                 break;
+
             case R.id.pelajaran9:
-                fragment = new Lesson9();
+                fragment = new Lesson();
+                key.putString("title","Recycler View");
+                key.putString("pdf","RecyclerView.pdf");
+                key.putString("app", "RecyclerView");
+                fragment.setArguments(key);
                 callFragment(fragment);
                 break;
+
             case R.id.pelajaran10:
-                fragment = new Lesson10();
+                fragment = new Lesson();
+                key.putString("title","Date Time Picker");
+                key.putString("pdf","DateTimePicker.pdf");
+                key.putString("app", "DateTimePicker");
+                fragment.setArguments(key);
                 callFragment(fragment);
                 break;
+
             case R.id.pelajaran11:
-                fragment = new Lesson11();
+                fragment = new Lesson();
+                key.putString("title","Droid Cafe");
+                key.putString("pdf","DroidCafe.pdf");
+                key.putString("app", "DroidCafe");
+                fragment.setArguments(key);
                 callFragment(fragment);
                 break;
+
             case R.id.pelajaran12:
-                fragment = new Lesson12();
+                fragment = new Lesson();
+                key.putString("title","Two Activities");
+                key.putString("pdf","TwoActivities.pdf");
+                key.putString("app", "TwoActivities");
+                fragment.setArguments(key);
                 callFragment(fragment);
                 break;
+
             default:
                 Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();
                 break;
