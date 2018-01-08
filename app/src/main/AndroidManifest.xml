@@ -161,7 +161,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Root.AboutUs"></activity>
+        <activity android:name=".Root.AboutUs" />
+        <activity android:name=".ProgramLain.HelloSharedPrefs.HelloSharedPrefs"></activity>
     </application>
 
 </manifest>

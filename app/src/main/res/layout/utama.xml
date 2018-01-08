@@ -1,36 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin">
 
     <LinearLayout
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@mipmap/ic_launcher"/>
-
         <TextView
-            android:layout_gravity="center"
+            style="@style/Base.DialogWindowTitle.AppCompat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16dp"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:text="@string/selamat_datang"
+            android:textSize="40sp"
             android:textStyle="bold"
-            android:text="Android Tutorial"/>
+            android:layout_marginBottom="25dp"/>
 
-        <TextView
-            android:layout_gravity="center"
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Alfian Agra Merry Production"/>
+            android:layout_gravity="center"
+            android:background="@mipmap/logo"
+            android:layout_marginBottom="18dp"/>
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="@string/detail_data" />
 
     </LinearLayout>
 
-</RelativeLayout>
+</ScrollView>

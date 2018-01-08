@@ -217,4 +217,30 @@ Anda juga akan mengubah keyboard menjadi keyboard yang menampilkan simbol "@" di
     <string name="user_merry">merrymarst</string>
     <!-- End TwoActivities -->
 
+    <!-- pho number -->
+    <string name="spinner_work">Home</string>
+    <string name="hint_phonenumber">Enter phone number</string>
+    <string name="nothing_selected">"onNothingSelected: "</string>
+    <string name="selamat_datang">SELAMAT DATANG</string>
+    <string name="detail_data">Aplikasi ini merupakan  aplikasi untuk membantu dalam belajar menjadi developer android. Rujukan dari Aplikasi ini yaitu Android Fundamental. Sebagaimana yang telah kita ketahui android merupakan platform yang sangat modern dan sangat pesat dalam pengembangannya. Semoga dapat membantu teman-teman dalam belajar membangun Android Apps. Selamat belajar !</string>
+
+    <string name="blue_button">Blue</string>
+
+    <!-- Button label for green button -->
+    <string name="green_button">Green</string>
+
+    <!-- Button label for red button -->
+    <string name="red_button">Red</string>
+
+    <!-- Button label for black button -->
+    <string name="black_button">Black</string>
+
+    <!-- Default string for count textview -->
+    <string name="default_count">0</string>
+
+    <!-- Button label for Count button -->
+    <string name="count_button">Count</string>
+
+    <!-- Button label for Reset button -->
+    <string name="reset_button">Reset</string>
 </resources>
