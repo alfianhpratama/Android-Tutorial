@@ -54,6 +54,8 @@ public class DroidCafe extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.droidcafe_activity_main);
+
+        setTitle("Droid Cafe");
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -96,11 +98,10 @@ public class DroidCafe extends AppCompatActivity {
             case R.id.action_status:
                 displayToast(getString(R.string.action_status_message));
                 return true;
-            case R.id.action_favorites:
-                displayToast(getString(R.string.action_favorites_message));
-                return true;
-            case R.id.action_contact:
-                displayToast(getString(R.string.action_contact_message));
+            case R.id.action_git:
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://github.com/merrymarst/KeyboardSamples/"));
+                startActivity(intent);
                 return true;
             default:
                 // Do nothing

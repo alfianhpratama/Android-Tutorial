@@ -209,6 +209,13 @@ Anda juga akan mengubah keyboard menjadi keyboard yang menampilkan simbol "@" di
     <string name="versio">Versio</string>
     <string name="logo">Logo</string>
     <string name="droid_cafe_image_detail">Droid Cafe Image Detail</string>
+    <string name="githubnya">Github :</string>
+    <string name="alfian">Alfian Hadi Pratama</string>
+    <string name="user_alfian">alfianhpratama</string>
+    <string name="agra">Agra</string>
+    <string name="user_agra">agra8</string>
+    <string name="merry">Merry Marsita</string>
+    <string name="user_merry">merrymarst</string>
     <!-- End TwoActivities -->
 
 </resources>

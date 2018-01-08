@@ -13,39 +13,35 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   -->
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ProgramLain.MaterialMe.MaterialMe">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:ignore="UselessParent">
 
         <include
             android:id="@+id/toolbar"
             layout="@layout/nav_toolbar" />
 
         <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/toolbar"
+            android:padding="@dimen/activity_vertical_margin"
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbars="vertical" />
 
         <android.support.design.widget.FloatingActionButton
+            android:padding="@dimen/activity_vertical_margin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end|right"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
             android:layout_margin="@dimen/activity_horizontal_margin"
             android:onClick="resetSports"
+            android:src="@drawable/ic_refresh"
             android:tint="@android:color/white"
-            app:srcCompat="@drawable/ic_reset"
-            tools:ignore="RtlHardcoded" />
+            app:backgroundTint="@color/orange" />
 
-    </LinearLayout>
-
-</FrameLayout>
+</RelativeLayout>

@@ -23,6 +23,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.Root.AboutUs;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Root.Utama;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Root.Version;
 
@@ -178,6 +179,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 key.putString("pdf","TwoActivities.pdf");
                 key.putString("app", "TwoActivities");
                 fragment.setArguments(key);
+                callFragment(fragment);
+                break;
+
+            case R.id.about:
+                fragment = new AboutUs();
                 callFragment(fragment);
                 break;
 
