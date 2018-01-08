@@ -23,6 +23,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_margin="18dp"
+        android:src="@drawable/ic_demo"
         app:backgroundTint="@color/colorPrimary"
         tools:ignore="RtlHardcoded,UnusedAttribute" />
 
