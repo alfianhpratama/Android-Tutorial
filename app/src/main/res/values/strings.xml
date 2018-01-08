@@ -208,6 +208,7 @@ Anda juga akan mengubah keyboard menjadi keyboard yang menampilkan simbol "@" di
     <string name="little_desc">Have Fun Build Android Apps</string>
     <string name="versio">Versio</string>
     <string name="logo">Logo</string>
+    <string name="droid_cafe_image_detail">Droid Cafe Image Detail</string>
     <!-- End TwoActivities -->
 
 </resources>

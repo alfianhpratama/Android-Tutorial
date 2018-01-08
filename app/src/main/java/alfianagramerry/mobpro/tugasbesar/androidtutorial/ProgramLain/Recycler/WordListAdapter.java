@@ -1,4 +1,4 @@
-package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.RecyclerView;
+package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.Recycler;
 /*
  * Copyright (C) 2016 Google Inc.
  *
@@ -15,6 +15,7 @@ package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.RecyclerVi
  * limitations under the License.
  */
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -36,7 +37,7 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
 
     class WordViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        public final TextView wordItemView;
+        final TextView wordItemView;
         final WordListAdapter mAdapter;
 
         /**
@@ -45,13 +46,14 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
          * @param itemView The view in which to display the data.
          * @param adapter  The adapter that manages the the data and views for the RecyclerView.
          */
-        public WordViewHolder(View itemView, WordListAdapter adapter) {
+        WordViewHolder(View itemView, WordListAdapter adapter) {
             super(itemView);
-            wordItemView = (TextView) itemView.findViewById(R.id.word);
+            wordItemView = itemView.findViewById(R.id.word);
             this.mAdapter = adapter;
             itemView.setOnClickListener(this);
         }
 
+        @SuppressLint("SetTextI18n")
         @Override
         public void onClick(View v) {
             // All we do here is prepend "Clicked! " to the text in the view, to verify that
@@ -60,7 +62,7 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
         }
     }
 
-    public WordListAdapter(Context context, LinkedList<String> wordList) {
+    WordListAdapter(Context context, LinkedList<String> wordList) {
         mInflater = LayoutInflater.from(context);
         this.mWordList = wordList;
     }

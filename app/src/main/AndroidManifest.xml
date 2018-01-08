@@ -98,7 +98,7 @@
         </activity>
 
         <activity
-            android:name=".ProgramLain.RecyclerView.Recycler"
+            android:name=".ProgramLain.Recycler.Recycler"
             android:parentActivityName=".MainActivity"
             tools:ignore="InnerclassSeparator,UnusedAttribute">
             <meta-data

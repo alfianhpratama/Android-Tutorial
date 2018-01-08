@@ -23,15 +23,16 @@ public class PhoneNumberSpinner extends AppCompatActivity implements
 
     private static final String TAG = PhoneNumberSpinner.class.getSimpleName();
     private String mSpinnerLabel = "";
-    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.phonenumberspinner_activity_main);
+
         setTitle("Phone Number Spinner");
-        toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
         //	Create	the	spinner.
         Spinner spinner = findViewById(R.id.label_spinner);
         if (spinner != null) {

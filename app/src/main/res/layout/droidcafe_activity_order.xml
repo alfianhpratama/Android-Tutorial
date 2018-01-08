@@ -18,13 +18,14 @@ limitations under the License. -->
     android:id="@+id/activity_order"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".ProgramLain.DroidCafe.DroidCafe">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/nav_toolbar" />
+
     <TextView
+        android:padding="@dimen/activity_vertical_margin"
         android:id="@+id/order_intro_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,6 +35,7 @@ limitations under the License. -->
         android:textSize="@dimen/intro_text_size" />
 
     <RadioGroup
+        android:padding="@dimen/activity_vertical_margin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -44,21 +46,24 @@ limitations under the License. -->
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
-            android:text="@string/same_day_messenger_service" />
+            android:text="@string/same_day_messenger_service"
+            tools:ignore="OnClick" />
 
         <RadioButton
             android:id="@+id/nextday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
-            android:text="@string/next_day_ground_delivery" />
+            android:text="@string/next_day_ground_delivery"
+            tools:ignore="OnClick" />
 
         <RadioButton
             android:id="@+id/pickup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
-            android:text="@string/pick_up" />
+            android:text="@string/pick_up"
+            tools:ignore="OnClick" />
     </RadioGroup>
 
 </RelativeLayout>

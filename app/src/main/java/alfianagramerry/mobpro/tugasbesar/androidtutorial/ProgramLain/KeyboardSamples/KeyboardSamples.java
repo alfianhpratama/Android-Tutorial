@@ -20,8 +20,6 @@ import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
 public class KeyboardSamples extends AppCompatActivity {
 
-    private Toolbar toolbar;
-
     public void showText(View view) {
         EditText editText = findViewById(R.id.editText_main);
         if (editText != null) {
@@ -34,7 +32,7 @@ public class KeyboardSamples extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.keyboardsample_activity_main);
         setTitle("Keyboard Sample");
-        toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
 

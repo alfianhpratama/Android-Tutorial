@@ -19,22 +19,19 @@ import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 public class GyroscopeSensor extends AppCompatActivity {
 
     private static final String TAG = "TabLateral";
-    private SensorManager sensorManager;
-    private Sensor gyroscopeSensor;
     private String a;
-    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gyroscope_activity_main);
         setTitle("Gyroscope Sensor");
-        toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+        SensorManager sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         assert sensorManager != null;
-        gyroscopeSensor = sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
+        Sensor gyroscopeSensor = sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
 
         // Create a listener
         SensorEventListener gyroscopeSensorListener = new SensorEventListener() {

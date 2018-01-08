@@ -149,7 +149,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 fragment = new Lesson();
                 key.putString("title","Recycler View");
                 key.putString("pdf","RecyclerView.pdf");
-                key.putString("app", "RecyclerView");
+                key.putString("app", "Recycler");
                 fragment.setArguments(key);
                 callFragment(fragment);
                 break;

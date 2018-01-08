@@ -4,22 +4,29 @@ package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.TabLateral
  * Created by Alfian Hadi Pratama on 03/01/2018.
  */
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
 public class TabLateral extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tablateral_activity_main);
+
+        setTitle("Tab Lateral");
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         //	Create	an	instance	of	the	tab	layout	from	the	view.
         TabLayout tabLayout = findViewById(R.id.tab_layout);
@@ -57,4 +64,23 @@ public class TabLateral extends AppCompatActivity {
         });
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.git_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.github:
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://github.com/merrymarst/KeyboardSamples/"));
+                startActivity(intent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 }

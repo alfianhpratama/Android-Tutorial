@@ -19,8 +19,14 @@ package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.AsyncTask;
  * limitations under the License.
  */
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
@@ -48,6 +54,10 @@ public class AsyncTask extends AppCompatActivity {
         setContentView(R.layout.asynctask_activity_main);
         //  Initialize mTextView
         mTextView = findViewById(R.id.textView1);
+
+        setTitle("Async Task");
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         // Restore TextView if there is a savedInstanceState
         if (savedInstanceState != null) {
@@ -82,5 +92,25 @@ public class AsyncTask extends AppCompatActivity {
         super.onSaveInstanceState(outState);
         // Save the state of the TextView
         outState.putString(TEXT_STATE, mTextView.getText().toString());
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.git_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.github:
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://github.com/merrymarst/KeyboardSamples/"));
+                startActivity(intent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

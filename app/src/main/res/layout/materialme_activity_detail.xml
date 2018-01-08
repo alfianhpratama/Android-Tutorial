@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   Copyright 2016 Google Inc.
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,48 +13,63 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   -->
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ProgramLain.MaterialMe.DetailActivity">
 
-    <RelativeLayout
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/nav_toolbar" />
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/sportsImageDetail"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true" />
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/titleDetail"
-            style="@style/TextAppearance.AppCompat.Headline"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/sportsImageDetail"
-            android:padding="@dimen/activity_horizontal_margin"
-            android:text="@string/title_placeholder"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
-        <TextView
-            android:id="@+id/newsTitleDetail"
-            style="@style/TextAppearance.AppCompat.Subhead"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/sportsImageDetail"
-            android:padding="@dimen/activity_horizontal_margin"
-            android:text="@string/news_label"
-            android:textColor="?android:textColorSecondary" />
-        <TextView
-            android:id="@+id/subTitleDetail"
-            style="@style/TextAppearance.AppCompat.Subhead"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/newsTitleDetail"
-            android:padding="@dimen/activity_horizontal_margin"
-            android:text="@string/filler_text" />
-    </RelativeLayout>
-</ScrollView>
+            <ImageView
+                android:id="@+id/sportsImageDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/droid_cafe_image_detail" />
+
+            <TextView
+                android:id="@+id/titleDetail"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/sportsImageDetail"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="@string/title_placeholder"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+            <TextView
+                android:id="@+id/newsTitleDetail"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sportsImageDetail"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="@string/news_label"
+                android:textColor="?android:textColorSecondary" />
+
+            <TextView
+                android:id="@+id/subTitleDetail"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/newsTitleDetail"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="@string/filler_text" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

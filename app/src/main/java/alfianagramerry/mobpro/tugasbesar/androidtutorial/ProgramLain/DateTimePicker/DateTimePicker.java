@@ -20,9 +20,15 @@ package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.DateTimePi
  * limitations under the License.
  */
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
@@ -40,6 +46,9 @@ public class DateTimePicker extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.datetimepicker_activity_main);
+        setTitle("Date Time Picker");
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
     }
 
     public void showDatePickerDialog(View v) {
@@ -70,6 +79,26 @@ public class DateTimePicker extends AppCompatActivity {
         // Assign the concatenated strings to timeMessage.
         String timeMessage = (hour_string + ":" + minute_string);
         Toast.makeText(this, getString(R.string.time) + timeMessage, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.git_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.github:
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://github.com/merrymarst/KeyboardSamples/"));
+                startActivity(intent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
 }

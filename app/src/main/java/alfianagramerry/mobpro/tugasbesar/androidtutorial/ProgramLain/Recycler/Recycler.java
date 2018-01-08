@@ -1,4 +1,4 @@
-package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.RecyclerView;
+package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.Recycler;
 
 /*
  * Copyright (C) 2016 Google Inc.
@@ -17,11 +17,17 @@ package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.RecyclerVi
  */
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 
 import java.util.LinkedList;
@@ -35,13 +41,16 @@ import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 public class Recycler extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;
-    private WordListAdapter mAdapter;
     private final LinkedList<String> mWordList = new LinkedList<>();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recyclerview_acrivity_main);
+
+        setTitle("Recycler View");
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         // Put initial data into the word list.
         for (int i = 0; i < 20; i++) {
@@ -51,7 +60,7 @@ public class Recycler extends AppCompatActivity {
         // Create recycler view.
         mRecyclerView = findViewById(R.id.recyclerview);
         // Create an adapter and supply the data to be displayed.
-        mAdapter = new WordListAdapter(this, mWordList);
+        WordListAdapter mAdapter = new WordListAdapter(this, mWordList);
         // Connect the adapter with the recycler view.
         mRecyclerView.setAdapter(mAdapter);
         // Give the recycler view a default layout manager.
@@ -71,5 +80,25 @@ public class Recycler extends AppCompatActivity {
                 mRecyclerView.smoothScrollToPosition(wordListSize);
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.git_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.github:
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://github.com/merrymarst/KeyboardSamples/"));
+                startActivity(intent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }
