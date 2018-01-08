@@ -15,9 +15,9 @@
 
         <ImageView
             android:layout_gravity="center"
-            android:layout_width="205dp"
-            android:layout_height="205dp"
-            android:background="@mipmap/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/logo"
             android:contentDescription="@string/logo" />
 
         <TextView
@@ -33,7 +33,7 @@
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/versio" />
+            android:text="@string/version" />
 
         <TextView
             android:layout_gravity="center"

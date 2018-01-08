@@ -201,12 +201,11 @@ Anda juga akan mengubah keyboard menjadi keyboard yang menampilkan simbol "@" di
     <string name="text_header_reply">Reply Received</string>
     <string name="android_tutorial">Android Tutorial</string>
     <string name="gambar">Gambar</string>
-    <string name="develop">Alfian Agra Merry Production</string>
+    <string name="develop">Alfian Agra Merry</string>
     <string name="learning">Learning</string>
     <string name="demo">Demo</string>
     <string name="judul_navigation">Mobile Programming</string>
     <string name="little_desc">Have Fun Build Android Apps</string>
-    <string name="versio">Versio</string>
     <string name="logo">Logo</string>
     <string name="droid_cafe_image_detail">Droid Cafe Image Detail</string>
     <string name="githubnya">Github :</string>
