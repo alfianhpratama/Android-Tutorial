@@ -42,7 +42,7 @@ public class SplashScreen extends AppCompatActivity {
                         }
                     });
                     try {
-                        Thread.sleep(50);
+                        Thread.sleep(40);
                         if (ActivityCompat.checkSelfPermission(SplashScreen.this, Manifest.permission.INTERNET) !=
                                 PackageManager.PERMISSION_GRANTED) {
                             request();
