@@ -1,6 +1,6 @@
 package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.TwoActivities;
 
-/**
+/*
  * Edited by Merry on 04/01/2018.
  */
 
@@ -31,9 +31,9 @@ public class TwoActivities extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.twoactivities_activity_main);
 
-        mMessageEditText = (EditText) findViewById(R.id.editText_main);
-        mReplyHeadTextView = (TextView) findViewById(R.id.text_header_reply);
-        mReplyTextView = (TextView) findViewById(R.id.text_message_reply);
+        mMessageEditText = findViewById(R.id.editText_main);
+        mReplyHeadTextView = findViewById(R.id.text_header_reply);
+        mReplyTextView = findViewById(R.id.text_message_reply);
     }
 
     public void launchSecondActivity(View view) {

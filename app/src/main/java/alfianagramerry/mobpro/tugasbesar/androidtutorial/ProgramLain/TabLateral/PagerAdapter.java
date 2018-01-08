@@ -1,7 +1,7 @@
 package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.TabLateral;
 
-/**
- * Created by Agra on 03/01/2018.
+/*
+ * Created by Alfian Hadi Pratama on 03/01/2018.
  */
 
 import android.support.v4.app.Fragment;
@@ -9,9 +9,10 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
-    int mNumOfTabs;
 
-    public PagerAdapter(FragmentManager fm, int NumOfTabs) {
+    private int mNumOfTabs;
+
+    PagerAdapter(FragmentManager fm, int NumOfTabs) {
         super(fm);
         this.mNumOfTabs = NumOfTabs;
     }

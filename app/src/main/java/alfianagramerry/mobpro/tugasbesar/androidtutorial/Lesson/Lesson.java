@@ -28,10 +28,8 @@ public class Lesson extends Fragment implements View.OnClickListener, OnPageChan
     public static String app = "";
     public static String title = "Keyboard Sample";
 
-    private FloatingActionButton demo;
     private PDFView pdfView;
     private Integer pageNumber = 0;
-    private String pdfFileName;
 
     public Lesson() {
     }
@@ -51,7 +49,7 @@ public class Lesson extends Fragment implements View.OnClickListener, OnPageChan
         getActivity().setTitle(title);
         pdfView = rootView.findViewById(R.id.pdfView);
         displayFromAsset(pdf);
-        demo = rootView.findViewById(R.id.menuju_demo);
+        FloatingActionButton demo = rootView.findViewById(R.id.menuju_demo);
         demo.setOnClickListener(this);
 
         return rootView;
@@ -70,7 +68,7 @@ public class Lesson extends Fragment implements View.OnClickListener, OnPageChan
     }
 
     private void displayFromAsset(String assetFileName) {
-        pdfFileName = assetFileName;
+        String pdfFileName = assetFileName;
 
         pdfView.fromAsset(pdf)
                 .defaultPage(pageNumber)

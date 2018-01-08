@@ -1,6 +1,6 @@
 package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.MaterialMe;
 
-/**
+/*
  * Edited by Agra on 02/01/2018.
  */
 
@@ -24,9 +24,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.DrawableRes;
 
-/**
- * Data model for each row of the RecyclerView.
- */
 class Sport {
 
     //Member variables representing the title, image and information about the sport

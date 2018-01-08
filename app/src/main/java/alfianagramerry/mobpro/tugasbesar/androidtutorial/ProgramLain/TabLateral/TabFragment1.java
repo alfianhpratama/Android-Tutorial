@@ -1,7 +1,7 @@
 package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.TabLateral;
 
-/**
- * Created by Agra on 03/01/2018.
+/*
+ * Created by Alfian Hadi Pratama on 03/01/2018.
  */
 
 import android.os.Bundle;

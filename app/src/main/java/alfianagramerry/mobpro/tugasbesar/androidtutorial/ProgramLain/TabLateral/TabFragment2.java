@@ -1,5 +1,9 @@
 package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.TabLateral;
 
+/*
+ * Created by Alfian Hadi Pratama on 03/01/2018.
+ */
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;

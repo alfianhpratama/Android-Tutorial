@@ -30,10 +30,10 @@ public class PhoneNumberSpinner extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.phonenumberspinner_activity_main);
         setTitle("Phone Number Spinner");
-        toolbar = (Toolbar)findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         //	Create	the	spinner.
-        Spinner spinner = (Spinner) findViewById(R.id.label_spinner);
+        Spinner spinner = findViewById(R.id.label_spinner);
         if (spinner != null) {
             spinner.setOnItemSelectedListener(this);
         }
@@ -61,11 +61,11 @@ public class PhoneNumberSpinner extends AppCompatActivity implements
     }
 
     public void showText(View view) {
-        EditText editText = (EditText) findViewById(R.id.editText_main);
+        EditText editText = findViewById(R.id.editText_main);
         if (editText != null) {
             String showString = (editText.getText().toString() + "	-	" + mSpinnerLabel);
             TextView phonenumberResult =
-                    (TextView) findViewById(R.id.text_phonelabel);
+                    findViewById(R.id.text_phonelabel);
             if (phonenumberResult != null)
                 phonenumberResult.setText(showString);
         }

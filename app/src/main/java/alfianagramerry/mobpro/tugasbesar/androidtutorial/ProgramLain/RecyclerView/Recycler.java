@@ -1,4 +1,5 @@
 package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.RecyclerView;
+
 /*
  * Copyright (C) 2016 Google Inc.
  *
@@ -57,7 +58,7 @@ public class Recycler extends AppCompatActivity {
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         // Add a floating action click handler for creating new entries.
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

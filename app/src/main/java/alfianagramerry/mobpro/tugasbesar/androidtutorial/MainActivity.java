@@ -1,5 +1,9 @@
 package alfianagramerry.mobpro.tugasbesar.androidtutorial;
 
+/*
+ * Created by Alfian Hadi Pratama on 17/12/2017.
+ */
+
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.ActivityNotFoundException;
@@ -8,7 +12,6 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -25,10 +28,7 @@ import alfianagramerry.mobpro.tugasbesar.androidtutorial.Root.Version;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
-    private Toolbar toolbar;
-    private NavigationView navigationView;
     private DrawerLayout drawerLayout;
-    private FragmentManager fragmentManager;
     private Fragment fragment = null;
 
     @Override
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         drawerLayout = findViewById(R.id.drawer);
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
-        navigationView = findViewById(R.id.navigation_view);
+        NavigationView navigationView = findViewById(R.id.navigation_view);
         navigationView.setNavigationItemSelectedListener(this);
 
         if (savedInstanceState == null) {
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     private void callFragment(android.app.Fragment fragment) {
-        fragmentManager = getFragmentManager();
+        FragmentManager fragmentManager = getFragmentManager();
         fragmentManager.beginTransaction()
                 .replace(R.id.content, fragment)
                 .commit();
@@ -211,8 +211,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.version_id:
-                Intent intent = new Intent(this, Version.class);
-                startActivity(intent);
+                fragment = new Version();
+                callFragment(fragment);
                 return true;
             case R.id.rate_us:
                 rateUs();

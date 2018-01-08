@@ -1,6 +1,6 @@
 package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.AlertSample;
 
-/**
+/*
  * Created by Agra on 02/01/2018.
  */
 
@@ -79,8 +79,6 @@ public class AlertSample extends AppCompatActivity {
             }
         });
 
-        // Create and show the AlertDialog.
         myAlertBuilder.show();
-
     }
 }

@@ -14,7 +14,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -23,47 +23,162 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" />
+
+        <activity
+            android:name=".ProgramLain.GyroscopeSensor.GyroscopeSensor"
+            android:parentActivityName=".MainActivity"
+            tools:ignore="InnerclassSeparator,UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ProgramLain.KeyboardSamples.KeyboardSamples"
+            android:parentActivityName=".MainActivity"
+            tools:ignore="InnerclassSeparator,UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ProgramLain.MaterialMe.MaterialMe"
+            android:parentActivityName=".MainActivity"
+            tools:ignore="InnerclassSeparator,UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ProgramLain.MaterialMe.DetailActivity"
+            android:parentActivityName=".MainActivity"
+            tools:ignore="InnerclassSeparator,UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ProgramLain.AlertSample.AlertSample"
+            android:parentActivityName=".MainActivity"
+            tools:ignore="InnerclassSeparator,UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ProgramLain.TabLateral.TabLateral"
+            android:parentActivityName=".MainActivity"
+            tools:ignore="InnerclassSeparator,UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ProgramLain.AsyncTask.AsyncTask"
+            android:parentActivityName=".MainActivity"
+            tools:ignore="InnerclassSeparator,UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ProgramLain.NotifyMe.NotifyMe"
+            android:parentActivityName=".MainActivity"
+            tools:ignore="InnerclassSeparator,UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ProgramLain.RecyclerView.Recycler"
+            android:parentActivityName=".MainActivity"
+            tools:ignore="InnerclassSeparator,UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ProgramLain.PhoneNumberSpinner.PhoneNumberSpinner"
+            android:parentActivityName=".MainActivity"
+            tools:ignore="InnerclassSeparator,UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ProgramLain.WhoWriteApp.WhoWriteApp"
+            android:parentActivityName=".MainActivity"
+            tools:ignore="InnerclassSeparator,UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ProgramLain.DateTimePicker.DateTimePicker"
+            android:parentActivityName=".MainActivity"
+            tools:ignore="InnerclassSeparator,UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ProgramLain.DroidCafe.DroidCafe"
+            android:parentActivityName=".MainActivity"
+            tools:ignore="InnerclassSeparator,UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ProgramLain.DroidCafe.OrderActivity"
+            android:parentActivityName=".MainActivity"
+            tools:ignore="InnerclassSeparator,UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ProgramLain.TwoActivities.TwoActivities"
+            android:parentActivityName=".MainActivity"
+            tools:ignore="InnerclassSeparator,UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ProgramLain.TwoActivities.SecondActivity"
+            android:parentActivityName=".MainActivity"
+            tools:ignore="InnerclassSeparator,UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".SplashScreen"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ProgramLain.GyroscopeSensor.GyroscopeSensor"
-            android:parentActivityName=".MainActivity"
-            tools:targetApi="jelly_bean">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        <activity
-            android:name=".Root.Version"
-            android:parentActivityName=".MainActivity"
-            tools:targetApi="jelly_bean">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
 
-        <activity android:name=".ProgramLain.KeyboardSamples.KeyboardSamples" />
-        <activity android:name=".ProgramLain.MaterialMe.MaterialMe" />
-        <activity android:name=".ProgramLain.MaterialMe.DetailActivity" />
-        <activity android:name=".ProgramLain.AlertSample.AlertSample" />
-        <activity android:name=".ProgramLain.TabLateral.TabLateral" />
-        <activity android:name=".ProgramLain.AsyncTask.AsyncTask" />
-        <activity android:name=".ProgramLain.NotifyMe.NotifyMe" />
-        <activity android:name=".ProgramLain.RecyclerView.Recycler" />
-        <activity android:name=".ProgramLain.PhoneNumberSpinner.PhoneNumberSpinner" />
-        <activity android:name=".ProgramLain.TabExperiment.TabExperiment" />
-        <activity android:name=".ProgramLain.WhoWriteApp.WhoWriteApp" />
-        <activity android:name=".ProgramLain.DateTimePicker.DateTimePicker" />
-        <activity android:name=".ProgramLain.DroidCafe.DroidCafe"/>
-        <activity android:name=".ProgramLain.DroidCafe.OrderActivity"/>
-        <activity android:name=".ProgramLain.TwoActivities.TwoActivities"/>
-        <activity android:name=".ProgramLain.TwoActivities.SecondActivity"/>
-        <activity android:name=".Lesson.PdfView"/>
     </application>
 
 </manifest>

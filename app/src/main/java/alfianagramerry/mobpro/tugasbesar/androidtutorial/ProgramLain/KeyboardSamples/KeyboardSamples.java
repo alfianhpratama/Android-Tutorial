@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
-/**
+/*
  * Created by Alfian Hadi Pratama on 26/12/2017.
  */
 
@@ -23,7 +23,7 @@ public class KeyboardSamples extends AppCompatActivity {
     private Toolbar toolbar;
 
     public void showText(View view) {
-        EditText editText = (EditText)findViewById(R.id.editText_main);
+        EditText editText = findViewById(R.id.editText_main);
         if (editText != null) {
             String showString = editText.getText().toString();
             Toast.makeText(this, showString, Toast.LENGTH_SHORT).show();
@@ -34,7 +34,7 @@ public class KeyboardSamples extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.keyboardsample_activity_main);
         setTitle("Keyboard Sample");
-        toolbar = (Toolbar)findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
 

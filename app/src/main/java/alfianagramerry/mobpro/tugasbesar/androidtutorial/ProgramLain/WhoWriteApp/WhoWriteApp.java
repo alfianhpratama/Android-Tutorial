@@ -1,4 +1,5 @@
 package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.WhoWriteApp;
+
 /*
  * Copyright (C) 2016 Google Inc.
  *
@@ -49,9 +50,9 @@ public class WhoWriteApp extends AppCompatActivity {
         setContentView(R.layout.whowriteapp_activity_main);
 
         // Initialize all the view variables.
-        mBookInput = (EditText) findViewById(R.id.bookInput);
-        mTitleText = (TextView) findViewById(R.id.titleText);
-        mAuthorText = (TextView) findViewById(R.id.authorText);
+        mBookInput = findViewById(R.id.bookInput);
+        mTitleText = findViewById(R.id.titleText);
+        mAuthorText = findViewById(R.id.authorText);
     }
 
     /**
@@ -66,12 +67,14 @@ public class WhoWriteApp extends AppCompatActivity {
         // Hide the keyboard when the button is pushed.
         InputMethodManager inputManager = (InputMethodManager)
                 getSystemService(Context.INPUT_METHOD_SERVICE);
+        assert inputManager != null;
         inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),
                 InputMethodManager.HIDE_NOT_ALWAYS);
 
         // Check the status of the network connection.
         ConnectivityManager connMgr = (ConnectivityManager)
                 getSystemService(Context.CONNECTIVITY_SERVICE);
+        assert connMgr != null;
         NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
 
         // If the network is active and the search field is not empty, start a FetchBook AsyncTask.

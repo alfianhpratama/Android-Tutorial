@@ -1,6 +1,6 @@
 package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.MaterialMe;
 
-/**
+/*
  * Edited by Agra on 02/01/2018.
  */
 

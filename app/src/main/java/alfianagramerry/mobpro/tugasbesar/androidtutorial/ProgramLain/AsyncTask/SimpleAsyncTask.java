@@ -1,8 +1,9 @@
 package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.AsyncTask;
 
-/**
+/*
  * Edited by Agra on 03/01/2018.
  */
+
 /*
  * Copyright (C) 2016 Google Inc.
  *
@@ -19,6 +20,7 @@ package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.AsyncTask;
  * limitations under the License.
  */
 
+import android.annotation.SuppressLint;
 import android.os.AsyncTask;
 import android.widget.TextView;
 
@@ -30,10 +32,11 @@ import java.util.Random;
 class SimpleAsyncTask extends AsyncTask<Void, Void, String> {
 
     // The TextView where we will show results
+    @SuppressLint("StaticFieldLeak")
     private TextView mTextView;
 
     // Constructor that provides a reference to the TextView from the MainActivity
-    public SimpleAsyncTask(TextView tv) {
+    SimpleAsyncTask(TextView tv) {
         mTextView = tv;
     }
 

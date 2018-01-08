@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
-/**
+/*
  * Created by Alfian Hadi Pratama on 25/12/2017.
  */
 

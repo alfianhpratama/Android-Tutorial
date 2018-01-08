@@ -21,15 +21,15 @@ package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.DateTimePi
  */
 
 
-        import android.app.DatePickerDialog;
-        import android.app.Dialog;
-        import android.os.Bundle;
-        import android.support.annotation.NonNull;
-        import android.support.v4.app.DialogFragment;
-        import android.support.v4.app.Fragment;
-        import android.widget.DatePicker;
+import android.app.DatePickerDialog;
+import android.app.Dialog;
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v4.app.DialogFragment;
+import android.support.v4.app.Fragment;
+import android.widget.DatePicker;
 
-        import java.util.Calendar;
+import java.util.Calendar;
 
 /**
  * A simple {@link Fragment} subclass for the date picker.
@@ -40,7 +40,8 @@ public class DatePickerFragment extends DialogFragment
 
     /**
      * Creates the date picker dialog with the current date from Calendar.
-     * @param savedInstanceState    Saved instance
+     *
+     * @param savedInstanceState Saved instance
      * @return DatePickerDialog     The date picker dialog
      */
     @NonNull
@@ -58,6 +59,7 @@ public class DatePickerFragment extends DialogFragment
 
     /**
      * Grabs the date and passes it to processDatePickerResult().
+     *
      * @param view  The date picker view
      * @param year  The year chosen
      * @param month The month chosen

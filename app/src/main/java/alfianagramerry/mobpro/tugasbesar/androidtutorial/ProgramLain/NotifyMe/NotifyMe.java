@@ -71,9 +71,9 @@ public class NotifyMe extends AppCompatActivity {
 
         mNotifyManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
 
-        mNotifyButton = (Button) findViewById(R.id.notify);
-        mUpdateButton = (Button) findViewById(R.id.update);
-        mCancelButton = (Button) findViewById(R.id.cancel);
+        mNotifyButton = findViewById(R.id.notify);
+        mUpdateButton = findViewById(R.id.update);
+        mCancelButton = findViewById(R.id.cancel);
 
         mNotifyButton.setEnabled(true);
         mUpdateButton.setEnabled(false);
@@ -125,7 +125,7 @@ public class NotifyMe extends AppCompatActivity {
     public void sendNotification() {
 
         //Sets up the pending intent that is delivered when the notification is clicked
-        Intent notificationIntent = new Intent(this,NotifyMe.class);
+        Intent notificationIntent = new Intent(this, NotifyMe.class);
         PendingIntent notificationPendingIntent = PendingIntent.getActivity
                 (this, NOTIFICATION_ID, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
@@ -254,6 +254,7 @@ public class NotifyMe extends AppCompatActivity {
         @Override
         public void onReceive(Context context, Intent intent) {
             String action = intent.getAction();
+            assert action != null;
             switch (action) {
                 case ACTION_CANCEL_NOTIFICATION:
                     cancelNotification();

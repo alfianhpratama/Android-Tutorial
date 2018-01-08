@@ -1,6 +1,6 @@
 package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.AsyncTask;
 
-/**
+/*
  * Edited by Agra on 03/01/2018.
  */
 
@@ -47,7 +47,7 @@ public class AsyncTask extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.asynctask_activity_main);
         //  Initialize mTextView
-        mTextView = (TextView) findViewById(R.id.textView1);
+        mTextView = findViewById(R.id.textView1);
 
         // Restore TextView if there is a savedInstanceState
         if (savedInstanceState != null) {

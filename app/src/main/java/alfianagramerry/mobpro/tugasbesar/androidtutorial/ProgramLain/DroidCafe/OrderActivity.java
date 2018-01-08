@@ -1,6 +1,6 @@
 package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.DroidCafe;
 
-/**
+/*
  * Edited by Merry on 04/01/2018.
  */
 

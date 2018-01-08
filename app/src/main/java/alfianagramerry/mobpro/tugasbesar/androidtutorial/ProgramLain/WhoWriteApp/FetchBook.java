@@ -1,4 +1,5 @@
 package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.WhoWriteApp;
+
 /*
  * Copyright (C) 2016 Google Inc.
  *
@@ -15,6 +16,7 @@ package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.WhoWriteAp
  * limitations under the License.
  */
 
+import android.annotation.SuppressLint;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.widget.EditText;
@@ -38,15 +40,18 @@ import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 public class FetchBook extends AsyncTask<String, Void, String> {
 
     // Variables for the search input field, and results TextViews
+    @SuppressLint("StaticFieldLeak")
     private EditText mBookInput;
+    @SuppressLint("StaticFieldLeak")
     private TextView mTitleText;
+    @SuppressLint("StaticFieldLeak")
     private TextView mAuthorText;
 
     // Class name for Log tag
     private static final String LOG_TAG = FetchBook.class.getSimpleName();
 
     // Constructor providing a reference to the views in MainActivity
-    public FetchBook(TextView titleText, TextView authorText, EditText bookInput) {
+    FetchBook(TextView titleText, TextView authorText, EditText bookInput) {
         this.mTitleText = titleText;
         this.mAuthorText = authorText;
         this.mBookInput = bookInput;
@@ -107,7 +112,7 @@ public class FetchBook extends AsyncTask<String, Void, String> {
             while ((line = reader.readLine()) != null) {
                 // Since it's JSON, adding a newline isn't necessary (it won't affect parsing)
                 // but it does make debugging a *lot* easier if you print out the completed buffer for debugging.
-                builder.append(line + "\n");
+                builder.append(line).append("\n");
             }
 
             if (builder.length() == 0) {
