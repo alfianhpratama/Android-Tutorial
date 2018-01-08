@@ -63,6 +63,7 @@ public class SplashScreen extends AppCompatActivity {
         ActivityCompat.requestPermissions(this,new String[]{
                 Manifest.permission.INTERNET
         },1);
+        //alfian
     }
 
 }
