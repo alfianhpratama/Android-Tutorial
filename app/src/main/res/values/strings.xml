@@ -3,20 +3,20 @@
     <string name="dibuka">Dibuka</string>
     <string name="ditutup">Ditutup</string>
     <string name="dashboard">Dashboard</string>
-    <string name="lesson_1">Lesson 1</string>
-    <string name="lesson_2">Lesson 2</string>
-    <string name="lesson_3">Lesson 3</string>
-    <string name="lesson_4">Lesson 4</string>
-    <string name="lesson_5">Lesson 5</string>
-    <string name="lesson_6">Lesson 6</string>
-    <string name="lesson_7">Lesson 7</string>
-    <string name="lesson_8">Lesson 8</string>
-    <string name="lesson_9">Lesson 9</string>
-    <string name="lesson_10">Lesson 10</string>
-    <string name="lesson_11">Lesson 11</string>
-    <string name="lesson_12">Lesson 12</string>
-    <string name="lesson_13">Lesson 13</string>
-    <string name="lesson_14">Lesson 14</string>
+    <string name="lesson_1">1. TwoActivity 1</string>
+    <string name="lesson_2">2. KeyboardSample</string>
+    <string name="lesson_3">3. PhoneNumberSpinner</string>
+    <string name="lesson_4">4. AlertSample</string>
+    <string name="lesson_5">5. DateTimePicker</string>
+    <string name="lesson_6">6. DroidCafe</string>
+    <string name="lesson_7">7. TabLateral</string>
+    <string name="lesson_8">8. RecyclerView</string>
+    <string name="lesson_9">9. MaterialMe</string>
+    <string name="lesson_10">10. AsyncTask</string>
+    <string name="lesson_11">11. WhoWriteApp</string>
+    <string name="lesson_12">12. NotifyMe</string>
+    <string name="lesson_13">13. HelloSharedPref</string>
+    <string name="lesson_14">14. WordListSql</string>
     <string name="about_us">About Us</string>
     <!-- Isi konten -->
     <string name="isi_keyboardsample">Dalam praktik ini, Anda akan membuat dan membangun aplikasi baru yang bernama Keyboard Samples untuk bereksperimen dengan atribut android:inputType untuk elemen UI EditText. Anda akan mengubah keyboard sehingga akan menyarankan pembetulan ejaan dan mengubah kapitalisasi setiap kalimat, seperti yang ditampilkan di sebelah kiri gambar di bawah ini. Untuk menyederhanakan aplikasi, Anda akan menampilkan teks yang dimasukkan dalam pesan toast.
@@ -32,24 +32,15 @@ Anda juga akan mengubah keyboard menjadi keyboard yang menampilkan simbol "@" di
     <string name="title">Title</string>
     <string name="show">Show</string>
     <string name="enter_phone">Enter Phone</string>
-    <string name="show_button">show button</string>
-    <string name="phonenumber_label">phonenumber label</string>
-    <string name="nothing_entered">nothing entered</string>
     <string name="phonenumber">phonenumber</string>
 
 
     <string-array name="judul_demo1">
-        <item>Baseball</item>
+        <item>KeyboardSample</item>
         <item>Badminton</item>
         <item>Basketball</item>
         <item>Bowling</item>
         <item>Cycling</item>
-    </string-array>
-    <string-array name="labels_array">
-        <item>Home</item>
-        <item>Work</item>
-        <item>Mobile</item>
-        <item>Other</item>
     </string-array>
 
     <!--Who Wrote It? -->
@@ -201,11 +192,12 @@ Anda juga akan mengubah keyboard menjadi keyboard yang menampilkan simbol "@" di
     <string name="text_header_reply">Reply Received</string>
     <string name="android_tutorial">Android Tutorial</string>
     <string name="gambar">Gambar</string>
-    <string name="develop">Alfian Agra Merry</string>
+    <string name="develop">Alfian Agra Merry Production</string>
     <string name="learning">Learning</string>
     <string name="demo">Demo</string>
     <string name="judul_navigation">Mobile Programming</string>
     <string name="little_desc">Have Fun Build Android Apps</string>
+    <string name="versio">Versio</string>
     <string name="logo">Logo</string>
     <string name="droid_cafe_image_detail">Droid Cafe Image Detail</string>
     <string name="githubnya">Github :</string>
@@ -217,13 +209,8 @@ Anda juga akan mengubah keyboard menjadi keyboard yang menampilkan simbol "@" di
     <string name="user_merry">merrymarst</string>
     <!-- End TwoActivities -->
 
-    <!-- pho number -->
-    <string name="spinner_work">Home</string>
-    <string name="hint_phonenumber">Enter phone number</string>
-    <string name="nothing_selected">"onNothingSelected: "</string>
-    <string name="selamat_datang">SELAMAT DATANG</string>
-    <string name="detail_data">Aplikasi ini merupakan  aplikasi untuk membantu dalam belajar menjadi developer android. Rujukan dari Aplikasi ini yaitu Android Fundamental. Sebagaimana yang telah kita ketahui android merupakan platform yang sangat modern dan sangat pesat dalam pengembangannya. Semoga dapat membantu teman-teman dalam belajar membangun Android Apps. Selamat belajar !</string>
-
+    <!--HelloSharedPref -->
+    <!-- Button label for blue button -->
     <string name="blue_button">Blue</string>
 
     <!-- Button label for green button -->
@@ -243,4 +230,34 @@ Anda juga akan mengubah keyboard menjadi keyboard yang menampilkan simbol "@" di
 
     <!-- Button label for Reset button -->
     <string name="reset_button">Reset</string>
+
+    <!--  End HelloSahredPref -->
+    <!-- PhoneNumberSpinner -->
+    <string name="phonenumber_label">"Phone Number: "</string>
+
+    <string-array name="labels_array">
+        <item>Home</item>
+        <item>Work</item>
+        <item>Mobile</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="spinner_work">Home</string>
+    <string name="hint_phonenumber">Enter phone number</string>
+    <string name="show_button">Show</string>
+    <string name="nothing_entered">Nothing entered.</string>
+    <string name="nothing_selected">"onNothingSelected: "</string>
+
+
+    <!-- WordListSql -->
+    <string name="hint_word">Word...</string>
+    <string name="hint_definition">Definition...</string>
+    <string name="button_save">Save</string>
+    <string name="button_new">New</string>
+    <string name="button_edit">Edit</string>
+    <string name="button_delete">Delete</string>
+    <string name="empty_not_saved">Word not saved because it is empty.</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="detail_data">Detail data</string>
+
 </resources>

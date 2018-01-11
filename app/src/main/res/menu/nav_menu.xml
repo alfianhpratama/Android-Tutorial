@@ -7,7 +7,6 @@
             android:icon="@drawable/ic_menus"
             android:title="@string/dashboard" />
 
-        <item android:title="Get Started">
             <menu>
 
                 <item
@@ -25,12 +24,6 @@
                     android:icon="@drawable/ic_menus"
                     android:title="@string/lesson_3" />
 
-            </menu>
-        </item>
-
-        <item android:title="Experinces">
-            <menu>
-
                 <item
                     android:id="@+id/pelajaran4"
                     android:icon="@drawable/ic_menus"
@@ -46,12 +39,6 @@
                     android:icon="@drawable/ic_menus"
                     android:title="@string/lesson_6" />
 
-            </menu>
-        </item>
-
-        <item android:title="Working in the Background">
-            <menu>
-
                 <item
                     android:id="@+id/pelajaran7"
                     android:icon="@drawable/ic_menus"
@@ -61,12 +48,6 @@
                     android:id="@+id/pelajaran8"
                     android:icon="@drawable/ic_menus"
                     android:title="@string/lesson_8" />
-
-            </menu>
-        </item>
-
-        <item android:title="All About Data">
-            <menu>
 
                 <item
                     android:id="@+id/pelajaran9"
@@ -85,9 +66,16 @@
                     android:id="@+id/pelajaran12"
                     android:icon="@drawable/ic_menus"
                     android:title="@string/lesson_12" />
+                <item
+                    android:id="@+id/pelajaran13"
+                    android:icon="@drawable/ic_menus"
+                    android:title="@string/lesson_13" />
+                <item
+                    android:id="@+id/pelajaran14"
+                    android:icon="@drawable/ic_menus"
+                    android:title="@string/lesson_14" />
 
             </menu>
-        </item>
 
     </group>
 
