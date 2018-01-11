@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
-import android.support.design.widget.FloatingActionButton;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -22,7 +21,7 @@ import com.shockwave.pdfium.PdfDocument;
 import java.util.List;
 
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Demo.Demo1;
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.Learning.Learning1;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.Learning.Learning;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
 
@@ -58,7 +57,7 @@ public class Lesson extends Fragment implements View.OnClickListener, OnPageChan
         bottomNavigation = (BottomNavigationView)rootView.findViewById(R.id.bottom_navigation);
         bottomNavigation.inflateMenu(R.menu.menu_learning);
         fragmentManager = getFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.viewnya, new Learning1()).commit();
+        fragmentManager.beginTransaction().replace(R.id.viewnya, new Learning()).commit();
 
         bottomNavigation.setOnNavigationItemSelectedListener(
                 new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -67,7 +66,7 @@ public class Lesson extends Fragment implements View.OnClickListener, OnPageChan
                         int id = item.getItemId();
                         switch (id) {
                             case R.id.learning:
-                                fragment = new Learning1();
+                                fragment = new Learning();
                                 break;
                             case R.id.demo:
                                 fragment = new Demo1();

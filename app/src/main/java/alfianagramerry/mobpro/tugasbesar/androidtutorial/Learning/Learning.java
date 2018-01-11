@@ -6,22 +6,25 @@ import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.github.barteksc.pdfviewer.PDFView;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Learning1 extends Fragment {
+public class Learning extends Fragment {
 
-    public static String pdf = "";
-    public static String app = "";
+    public static String pdf = "KeyboardSamples";
     public static String title = "";
     private PDFView pdfView;
 
-    public Learning1() {
+    public Learning() {
         // Required empty public constructor
     }
 
@@ -32,7 +35,6 @@ public class Learning1 extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_learning1, container, false);
         pdf = getArguments().getString("pdf");
         title = getArguments().getString("title");
-        app = getArguments().getString("app");
         pdfView = rootView.findViewById(R.id.pdfView);
         displayFromAsset(pdf);
         // Inflate the layout for this fragment

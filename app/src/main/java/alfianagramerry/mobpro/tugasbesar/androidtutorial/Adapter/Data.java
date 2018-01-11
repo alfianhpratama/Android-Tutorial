@@ -9,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -19,24 +18,24 @@ import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
  * Created by Alfian Hadi Pratama on 25/12/2017.
  */
 
-public class Data1 extends RecyclerView.Adapter<Data1.ViewHolder> {
+public class Data extends RecyclerView.Adapter<Data.ViewHolder> {
 
     private ArrayList<ListData> listData;
     private Context context;
     String app;
 
-    public Data1(Context context, ArrayList<ListData> listData) {
+    public Data(Context context, ArrayList<ListData> listData) {
         this.listData = listData;
         this.context = context;
     }
 
     @Override
-    public Data1.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public Data.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater.from(context).inflate(R.layout.list_view, parent, false));
     }
 
     @Override
-    public void onBindViewHolder(Data1.ViewHolder holder, int position) {
+    public void onBindViewHolder(Data.ViewHolder holder, int position) {
         holder.textView.setText(listData.get(position).getTitle());
 
         // Toast.makeText(context,"The Item Clicked is: "+position, Toast.LENGTH_SHORT).show();

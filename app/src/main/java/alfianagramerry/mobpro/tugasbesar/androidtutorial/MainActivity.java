@@ -22,8 +22,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.Learning.Learning1;
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.Lesson;
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.Learning.Learning;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.LessonFragment;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Root.AboutUs;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Root.Utama;
@@ -78,79 +77,71 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             case R.id.pelajaran1:
                 fragment = new LessonFragment();
-                Fragment test = new Learning1();
                 key.putString("title","Two Activities");
                 key.putString("pdf","TwoActivities.pdf");
-                key.putString("app", "TwoActivities");
+                key.putStringArray("data", getResources().getStringArray(R.array.judul_demo1));
                 fragment.setArguments(key);
                 callFragment(fragment);
                 break;
 
-  /*          case R.id.pelajaran2:
-                fragment = new Lesson();
+            case R.id.pelajaran2:
+                fragment = new LessonFragment();
                 key.putString("title","Keyboard Samples");
                 key.putString("pdf","KeyboardSamples.pdf");
-                key.putString("app", "KeyboardSamples");
                 fragment.setArguments(key);
                 callFragment(fragment);
                 break;
 
             case R.id.pelajaran3:
-                fragment = new Lesson();
+                fragment = new LessonFragment();
                 key.putString("title","Phone Number Spinner");
                 key.putString("pdf","PhoneNumberSpinner.pdf");
-                key.putString("app", "PhoneNumberSpinner");
                 fragment.setArguments(key);
                 callFragment(fragment);
                 break;
 
             case R.id.pelajaran4:
-                fragment = new Lesson();
+                fragment = new LessonFragment();
                 key.putString("title","Alert Sample");
                 key.putString("pdf","AlertSample.pdf");
-                key.putString("app", "AlertSample");
                 fragment.setArguments(key);
                 callFragment(fragment);
                 break;
 
             case R.id.pelajaran5:
-                fragment = new Lesson();
+                fragment = new LessonFragment();
                 key.putString("title","Date Time Picker");
                 key.putString("pdf","DateTimePicker.pdf");
-                key.putString("app", "DateTimePicker");
                 fragment.setArguments(key);
                 callFragment(fragment);
                 break;
 
             case R.id.pelajaran6:
-                fragment = new Lesson();
+                fragment = new LessonFragment();
                 key.putString("title","Droid Cafe");
                 key.putString("pdf","DroidCafe.pdf");
-                key.putString("app", "DroidCafe");
                 fragment.setArguments(key);
                 callFragment(fragment);
                 break;
 
             case R.id.pelajaran7:
-                fragment = new Lesson();
+                fragment = new LessonFragment();
                 key.putString("title","Tab Lateral");
                 key.putString("pdf","TabLateral.pdf");
-                key.putString("app", "TabLateral");
                 fragment.setArguments(key);
                 callFragment(fragment);
                 break;
 
             case R.id.pelajaran8:
-                fragment = new Lesson();
+                fragment = new LessonFragment();
                 key.putString("title","Recycler View");
                 key.putString("pdf","RecyclerView.pdf");
-                key.putString("app", "Recycler");
                 fragment.setArguments(key);
                 callFragment(fragment);
                 break;
 
             case R.id.pelajaran9:
-                fragment = new Lesson();
+                fragment = new LessonFragment();
                 key.putString("title","Material Me");
                 key.putString("pdf","MaterialMe.pdf");
                 key.putString("app", "MaterialMe");
@@ -159,44 +150,39 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.pelajaran10:
-                fragment = new Lesson();
+                fragment = new LessonFragment();
                 key.putString("title","Async Task");
                 key.putString("pdf","AsyncTask.pdf");
-                key.putString("app", "AsyncTask");
                 fragment.setArguments(key);
                 callFragment(fragment);
                 break;
 
             case R.id.pelajaran11:
-                fragment = new Lesson();
+                fragment = new LessonFragment();
                 key.putString("title","Who Write App");
                 key.putString("pdf","WhoWriteApp.pdf");
-                key.putString("app", "WhoWriteApp");
                 fragment.setArguments(key);
                 callFragment(fragment);
                 break;
 
             case R.id.pelajaran12:
-                fragment = new Lesson();
+                fragment = new LessonFragment();
                 key.putString("title","Notify Me");
                 key.putString("pdf","NotifyMe.pdf");
-                key.putString("app", "NotifyMe");
                 fragment.setArguments(key);
                 callFragment(fragment);
                 break;
             case R.id.pelajaran13:
-                fragment = new Lesson();
+                fragment = new LessonFragment();
                 key.putString("title","HelloSharedPreference");
                 key.putString("pdf","SharedPreference.pdf");
-                key.putString("app", "HelloSharedPrefs");
                 fragment.setArguments(key);
                 callFragment(fragment);
                 break;
             case R.id.pelajaran14:
-                fragment = new Lesson();
+                fragment = new LessonFragment();
                 key.putString("title","WordListSql");
                 key.putString("pdf","WordList.pdf");
-                key.putString("app", "WordListSql");
                 fragment.setArguments(key);
                 callFragment(fragment);
                 break;
@@ -205,7 +191,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 fragment = new AboutUs();
                 callFragment(fragment);
                 break;
-*/
+
             default:
                 Toast.makeText(getApplicationContext(), "On Progress", Toast.LENGTH_SHORT).show();
                 break;
