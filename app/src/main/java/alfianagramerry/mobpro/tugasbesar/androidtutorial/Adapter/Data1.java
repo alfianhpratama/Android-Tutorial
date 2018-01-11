@@ -1,22 +1,21 @@
 package alfianagramerry.mobpro.tugasbesar.androidtutorial.Adapter;
 
+import android.annotation.SuppressLint;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
-import android.view.ViewGroup;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.GyroscopeSensor.GyroscopeSensor;
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.KeyboardSamples.KeyboardSamples;
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.PhoneNumberSpinner.PhoneNumberSpinner;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
-/**
+/*
  * Created by Alfian Hadi Pratama on 25/12/2017.
  */
 
@@ -24,6 +23,7 @@ public class Data1 extends RecyclerView.Adapter<Data1.ViewHolder> {
 
     private ArrayList<ListData> listData;
     private Context context;
+    String app;
 
     public Data1(Context context, ArrayList<ListData> listData) {
         this.listData = listData;
@@ -37,8 +37,9 @@ public class Data1 extends RecyclerView.Adapter<Data1.ViewHolder> {
 
     @Override
     public void onBindViewHolder(Data1.ViewHolder holder, int position) {
-        ListData currentData = listData.get(position);
-        holder.bindTo(currentData);
+        holder.textView.setText(listData.get(position).getTitle());
+
+        // Toast.makeText(context,"The Item Clicked is: "+position, Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -52,18 +53,25 @@ public class Data1 extends RecyclerView.Adapter<Data1.ViewHolder> {
 
         private ViewHolder(View itemView) {
             super(itemView);
-            textView = (TextView)itemView.findViewById(R.id.title);
+            textView = itemView.findViewById(R.id.title);
             itemView.setOnClickListener(this);
             context = itemView.getContext();
         }
 
-        void bindTo(ListData currentList) {
-            textView.setText(currentList.getTitle());
-        }
-
+        @SuppressLint("Assert")
         @Override
         public void onClick(View view) {
 
+            app = "alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain."+textView.getText()+"."+textView.getText();
+            Intent intent = null;
+            intent = new Intent(Intent.ACTION_MAIN)
+                    .addCategory(intent.CATEGORY_LAUNCHER)
+                    .setClassName(context, app)
+                    .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                    .addFlags(Intent.FLAG_FROM_BACKGROUND)
+                    .setComponent(new ComponentName(context, app));
+            context.getApplicationContext().startActivity(intent);
+/*
             final Intent intent;
             switch (getAdapterPosition()) {
                 case 0:
@@ -71,11 +79,8 @@ public class Data1 extends RecyclerView.Adapter<Data1.ViewHolder> {
                     break;
 
                 case 1:
-                    intent = new Intent(context, KeyboardSamples.class);
-                    break;
-
-                case 2:
-                    intent = new Intent(context, PhoneNumberSpinner.class);
+                    intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse("http://www.youtube.com"));
                     break;
 
                 default:
@@ -83,7 +88,7 @@ public class Data1 extends RecyclerView.Adapter<Data1.ViewHolder> {
                     intent.setData(Uri.parse("http://www.facebook.com"));
                     break;
             }
-            context.startActivity(intent);
+            context.startActivity(intent); */
 
         }
     }

@@ -53,8 +53,6 @@ public class Demo1 extends Fragment {
     private void ambilData() {
         String[] demoList = getResources().getStringArray(R.array.judul_demo1);
 
-        listData.clear();
-
         for (int i = 0; i < demoList.length; i++) {
             listData.add(new ListData(demoList[i]));
         }

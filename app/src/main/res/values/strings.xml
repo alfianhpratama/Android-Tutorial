@@ -36,12 +36,15 @@ Anda juga akan mengubah keyboard menjadi keyboard yang menampilkan simbol "@" di
 
 
     <string-array name="judul_demo1">
-        <item>KeyboardSample</item>
-        <item>Badminton</item>
-        <item>Basketball</item>
-        <item>Bowling</item>
-        <item>Cycling</item>
+        <item>HelloWorld</item>
     </string-array>
+    <string-array name="judul_demo2">
+        <item>HelloToast</item>
+    </string-array>
+    <string-array name="judul_demo3">
+        <item>HelloWorld</item>
+    </string-array>
+
 
     <!--Who Wrote It? -->
     <string name="instructions">Enter a full or partial book name or text from the book. Click Search Books to find out who wrote the book. </string>

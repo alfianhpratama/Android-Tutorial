@@ -29,7 +29,7 @@ import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 public class Lesson extends Fragment implements View.OnClickListener, OnPageChangeListener, OnLoadCompleteListener {
 
     public static String pdf = "";
-    public static String app = "";
+    public static String app = "KeyboardSample";
     public static String title = "Keyboard Sample";
 
     private PDFView pdfView;
