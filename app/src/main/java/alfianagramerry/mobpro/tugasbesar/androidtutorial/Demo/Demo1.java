@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -65,10 +66,11 @@ public class Demo1 extends Fragment {
 
     private void ambilData() {
         String[] demoList = data;
+        TextView textView = getActivity().findViewById(R.id.warning_demo);
         if (data==null){
-            Toast.makeText(getActivity(), "Tidak ada Demo pada Bab ini", Toast.LENGTH_SHORT).show();
             getFragmentManager().popBackStack();
         }else {
+            textView.setVisibility(View.GONE);
             for (int i = 0; i < demoList.length; i++) {
                 listData.add(new ListData(demoList[i]));
             }
