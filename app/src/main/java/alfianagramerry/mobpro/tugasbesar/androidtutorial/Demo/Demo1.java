@@ -1,32 +1,20 @@
 package alfianagramerry.mobpro.tugasbesar.androidtutorial.Demo;
 
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
-import android.content.Intent;
-import android.os.Build;
-import android.os.Bundle;
 import android.app.Fragment;
-import android.support.annotation.RequiresApi;
-import android.support.annotation.StringRes;
+import android.app.FragmentManager;
+import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Adapter.Data;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Adapter.ListData;
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.Learning.Learning;
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.MainActivity;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
 /**
@@ -38,6 +26,8 @@ public class Demo1 extends Fragment {
     private RecyclerView.LayoutManager layoutManager;
     private ArrayList<ListData> listData;
     public static String data[];
+    public String noDemo;
+    View rootView;
     FragmentManager fragmentManager;
 
     //sesuaikan dengan adapter
@@ -52,7 +42,7 @@ public class Demo1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.fragment_demo1, container, false);
+        rootView = inflater.inflate(R.layout.fragment_demo1, container, false);
         data = getArguments().getStringArray("data");
         fragmentManager = getFragmentManager();
         recyclerView = rootView.findViewById(R.id.recyclerView);
@@ -69,10 +59,9 @@ public class Demo1 extends Fragment {
 
     private void ambilData() {
         String[] demoList = data;
-
         if (data==null || data.length==0){
-            TextView textView = getActivity().findViewById(R.id.warning_demo);
-            textView.setText("tes");
+            TextView test = rootView.findViewById(R.id.warning_demo);
+            test.setText(getText(R.string.no_demo));
             getFragmentManager().popBackStack();
         }else {
             for (int i = 0; i < demoList.length; i++) {

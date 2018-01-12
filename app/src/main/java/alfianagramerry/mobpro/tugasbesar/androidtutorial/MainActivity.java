@@ -308,8 +308,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                         finish();
                         //close();
-
-
                     }
                 })
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {

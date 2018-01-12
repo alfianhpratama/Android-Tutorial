@@ -36,7 +36,6 @@ public class KeyboardSamples extends AppCompatActivity {
         setTitle("Keyboard Sample");
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
     }
 
     @Override

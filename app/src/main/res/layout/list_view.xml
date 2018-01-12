@@ -5,26 +5,48 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp">
+        android:layout_margin="10dp"
+        android:layout_height="match_parent"
+        android:gravity="center">
 
-        <ImageView
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivImages"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/ic_action_play" />
-
+            android:src="@drawable/ic_play" />
         <TextView
             android:id="@+id/title"
-            style="@style/Base.TextAppearance.AppCompat.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:text="@string/title"
             android:textSize="20sp" />
-
-
     </RelativeLayout>
+
+    <!-- <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:padding="10dp">
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:src="@drawable/ic_action_play" />
+
+
+         <TextView
+             android:id="@+id/title"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:text="@string/title"
+             android:textSize="12sp" />
+
+
+
+     </RelativeLayout> -->
 
 </android.support.v7.widget.CardView>
