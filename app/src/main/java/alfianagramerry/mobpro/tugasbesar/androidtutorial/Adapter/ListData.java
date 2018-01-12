@@ -1,6 +1,6 @@
 package alfianagramerry.mobpro.tugasbesar.androidtutorial.Adapter;
 
-/**
+/*
  * Created by Alfian Hadi Pratama on 25/12/2017.
  */
 

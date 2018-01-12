@@ -33,7 +33,6 @@ public class Lesson extends Fragment implements View.OnClickListener, OnPageChan
 
     private PDFView pdfView;
     private Integer pageNumber = 0;
-    private BottomNavigationView bottomNavigation;
     private Fragment fragment;
     private FragmentManager fragmentManager;
 
@@ -50,11 +49,11 @@ public class Lesson extends Fragment implements View.OnClickListener, OnPageChan
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.activity_lesson, container, false);
         pdf = getArguments().getString("pdf");
-        title = getArguments().getString("title");
+        title = getArguments().getString("titl  w   e");
         app = getArguments().getString("app");
         getActivity().setTitle(title);
 
-        bottomNavigation = (BottomNavigationView)rootView.findViewById(R.id.bottom_navigation);
+        BottomNavigationView bottomNavigation = (BottomNavigationView) rootView.findViewById(R.id.bottom_navigation);
         bottomNavigation.inflateMenu(R.menu.menu_learning);
         fragmentManager = getFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.viewnya, new Learning()).commit();

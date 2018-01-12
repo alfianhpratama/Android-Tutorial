@@ -22,7 +22,6 @@ public class Data extends RecyclerView.Adapter<Data.ViewHolder> {
 
     private ArrayList<ListData> listData;
     private Context context;
-    String app;
 
     public Data(Context context, ArrayList<ListData> listData) {
         this.listData = listData;
@@ -61,10 +60,9 @@ public class Data extends RecyclerView.Adapter<Data.ViewHolder> {
         @Override
         public void onClick(View view) {
 
-            app = "alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain."+textView.getText()+"."+textView.getText();
-            Intent intent = null;
-            intent = new Intent(Intent.ACTION_MAIN)
-                    .addCategory(intent.CATEGORY_LAUNCHER)
+            String app = "alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain." + textView.getText() + "." + textView.getText();
+            Intent intent = new Intent(Intent.ACTION_MAIN)
+                    .addCategory(Intent.CATEGORY_LAUNCHER)
                     .setClassName(context, app)
                     .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                     .addFlags(Intent.FLAG_FROM_BACKGROUND)

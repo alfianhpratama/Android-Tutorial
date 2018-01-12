@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Android Tutorial</string>
     <string name="dibuka">Dibuka</string>
     <string name="ditutup">Ditutup</string>
@@ -55,13 +55,13 @@
         <item>HelloWorld</item>
     </string-array>
     <string-array name="judul_demo2">
-        <item></item>
+        <item />
     </string-array>
     <string-array name="judul_demo3">
-        <item></item>
+        <item />
     </string-array>
     <string-array name="judul_demo4">
-        <item></item>
+        <item />
     </string-array>
     <string-array name="judul_demo5">
         <item>KeyboardSamples</item>
@@ -82,10 +82,10 @@
         <item>MaterialMe</item>
     </string-array>
     <string-array name="judul_demo10">
-        <item></item>
+        <item />
     </string-array>
     <string-array name="judul_demo11">
-        <item></item>
+        <item />
     </string-array>
     <string-array name="judul_demo12">
         <item>AsyncTask</item>
@@ -319,8 +319,8 @@
 
 
     <!-- WordListSql -->
-    <string name="hint_word">Word...</string>
-    <string name="hint_definition">Definition...</string>
+    <string name="hint_word" tools:ignore="TypographyEllipsis">Word...</string>
+    <string name="hint_definition" tools:ignore="TypographyEllipsis">Definition...</string>
     <string name="button_save">Save</string>
     <string name="button_new">New</string>
     <string name="button_edit">Edit</string>
@@ -328,6 +328,29 @@
     <string name="empty_not_saved">Word not saved because it is empty.</string>
     <string name="selamat_datang">Selamat Datang</string>
     <string name="detail_data">Detail data</string>
+    <string name="memulai">Memulai</string>
+    <string name="aktivitas">Aktivitas</string>
+    <string name="interaksi_pengguna">Interaksi Pengguna</string>
+    <string name="pengalaman_pengguna">Pengalaman Pengguna</string>
+    <string name="uji_aplikasi">Uji Aplikasi</string>
+    <string name="tugas_layar_belakang">Tugas Layar Belakang</string>
+    <string name="memicu_menjadwalkan_dan_mengoptimalkan_tugas_latar_belakang">Memicu, menjadwalkan, dan Mengoptimalkan Tugas Latar Belakang</string>
+    <string name="preferensi_dan_setelan">Preferensi dan Setelan</string>
+    <string name="about">About</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Hallo Developer!</string>
+    <string name="slide_2_title">Learn by Doing!</string>
+    <string name="slide_3_title">Go Developer!</string>
+    <string name="slide_4_title">Let\'s Star!</string>
+
+    <string name="slide_1_desc">How do you think about build your own android app? What if we help you in building it?</string>
+    <string name="slide_2_desc">We learn and we do developing android application will be more exciting right?</string>
+    <string name="slide_3_desc">You will get a lot of knowledge and many examples in building your own application andorid here</string>
+    <string name="slide_4_desc">Let\'s start learning to make apps on your android device</string>
 
 
 </resources>

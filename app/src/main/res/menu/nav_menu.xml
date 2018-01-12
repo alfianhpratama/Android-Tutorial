@@ -7,7 +7,7 @@
             android:id="@+id/home_page"
             android:icon="@drawable/ic_menus"
             android:title="@string/dashboard" />
-        <item android:title="Memulai">
+        <item android:title="@string/memulai">
             <menu>
                 <item
                     android:id="@+id/pelajaran11"
@@ -23,7 +23,7 @@
                     android:title="@string/judul3" />
             </menu>
         </item>
-        <item android:title="Aktivitas">
+        <item android:title="@string/aktivitas">
             <menu>
                 <item
                     android:id="@+id/pelajaran21"
@@ -32,7 +32,7 @@
             </menu>
         </item>
 
-        <item android:title="Interaksi Pengguna">
+        <item android:title="@string/interaksi_pengguna">
             <menu>
                 <item
                     android:id="@+id/pelajaran41"
@@ -52,7 +52,7 @@
                     android:title="@string/judul8" />
             </menu>
         </item>
-        <item android:title="Pengalaman Pengguna">
+        <item android:title="@string/pengalaman_pengguna">
             <menu>
                 <!--<item
                     android:id="@+id/pelajaran51"
@@ -68,7 +68,7 @@
                     android:title="@string/judul10" />
             </menu>
         </item>
-        <item android:title="Uji Aplikasi">
+        <item android:title="@string/uji_aplikasi">
             <menu>
                 <item
                     android:id="@+id/pelajaran61"
@@ -77,163 +77,151 @@
 
             </menu>
         </item>
-        <item android:title="Tugas Layar Belakang">
+        <item android:title="@string/tugas_layar_belakang">
             <menu>
                 <item
                     android:id="@+id/pelajaran71"
                     android:icon="@drawable/ic_file"
                     android:title="@string/judul12" />
-             <!--   <item
-                    android:id="@+id/pelajaran72"
-                    android:icon="@drawable/ic_file"
-                    android:title="Menghubungkan Ke Internet dengan AsyncTask dan AsyncTaskLoader" />
-                <item
-                    android:id="@+id/pelajaran73"
-                    android:icon="@drawable/ic_file"
-                    android:title="Penerima Siaran" /> -->
+                <!--   <item
+                       android:id="@+id/pelajaran72"
+                       android:icon="@drawable/ic_file"
+                       android:title="Menghubungkan Ke Internet dengan AsyncTask dan AsyncTaskLoader" />
+                   <item
+                       android:id="@+id/pelajaran73"
+                       android:icon="@drawable/ic_file"
+                       android:title="Penerima Siaran" /> -->
             </menu>
         </item>
-        <item android:title="Memicu, menjadwalkan, dan Mengoptimalkan Tugas Latar Belakang">
+        <item android:title="@string/memicu_menjadwalkan_dan_mengoptimalkan_tugas_latar_belakang">
             <menu>
                 <item
                     android:id="@+id/pelajaran81"
                     android:icon="@drawable/ic_file"
                     android:title="@string/judul13" />
-            <!--    <item
-                    android:id="@+id/pelajaran82"
-                    android:icon="@drawable/ic_file"
-                    android:title="Alarm Manager" />
-                <item
-                    android:id="@+id/pelajaran83"
-                    android:icon="@drawable/ic_file"
-                    android:title="Job Scheduler" /> -->
+                <!--    <item
+                        android:id="@+id/pelajaran82"
+                        android:icon="@drawable/ic_file"
+                        android:title="Alarm Manager" />
+                    <item
+                        android:id="@+id/pelajaran83"
+                        android:icon="@drawable/ic_file"
+                        android:title="Job Scheduler" /> -->
             </menu>
         </item>
-        <item android:title="Preferensi dan Setelan">
+        <item android:title="@string/preferensi_dan_setelan">
             <menu>
                 <item
                     android:id="@+id/pelajaran91"
                     android:icon="@drawable/ic_file"
                     android:title="@string/judul14" />
-              <!--  <item
-                    android:id="@+id/pelajaran92"
-                    android:icon="@drawable/ic_file"
-                    android:title="Menambahkan Setelan ke Aplikasi " /> -->
+                <!--  <item
+                      android:id="@+id/pelajaran92"
+                      android:icon="@drawable/ic_file"
+                      android:title="Menambahkan Setelan ke Aplikasi " /> -->
             </menu>
         </item>
-       <!-- <item android:title="SQLite">
-            <menu>
-                <item
-                    android:id="@+id/pelajaran101"
-                    android:icon="@drawable/ic_file"
-                    android:title="Database SQLite" />
-                <item
-                    android:id="@+id/pelajaran102"
-                    android:icon="@drawable/ic_file"
-                    android:title="Menelusuri Database SQLite" />
-            </menu>
-        </item> -->
+        <!-- <item android:title="SQLite">
+             <menu>
+                 <item
+                     android:id="@+id/pelajaran101"
+                     android:icon="@drawable/ic_file"
+                     android:title="Database SQLite" />
+                 <item
+                     android:id="@+id/pelajaran102"
+                     android:icon="@drawable/ic_file"
+                     android:title="Menelusuri Database SQLite" />
+             </menu>
+         </item> -->
         <item android:title="Berbagi data">
             <menu>
-            <!--    <item
-                    android:id="@+id/pelajaran111"
-                    android:icon="@drawable/ic_file"
-                    android:title="Mengimplementasikan Penyedia Materi Minimalis" /> -->
+                <!--    <item
+                        android:id="@+id/pelajaran111"
+                        android:icon="@drawable/ic_file"
+                        android:title="Mengimplementasikan Penyedia Materi Minimalis" /> -->
                 <item
                     android:id="@+id/pelajaran112"
                     android:icon="@drawable/ic_file"
                     android:title="@string/judul15" />
-               <!-- <item
-                    android:id="@+id/pelajaran113"
-                    android:icon="@drawable/ic_file"
-                    android:title="Berbagi Materi dengan Aplikasi Lain" /> -->
+                <!-- <item
+                     android:id="@+id/pelajaran113"
+                     android:icon="@drawable/ic_file"
+                     android:title="Berbagi Materi dengan Aplikasi Lain" /> -->
             </menu>
         </item>
-       <!-- <item android:title="Data Loaader">
-            <menu>
-                <item
-                    android:id="@+id/pelajaran121"
-                    android:icon="@drawable/ic_file"
-                    android:title="Memuat dan Menampilkan Data Yang Daiambil" />
-
-            </menu>
-        </item> -->
-   <!--   <menu>
-
-            <item
-                android:id="@+id/Lesson1"
-                android:icon="@drawable/ic_menus"
-                android:title="@string/dashboard" />
-            <item
-                android:id="@+id/pelajaran1"
-                android:icon="@drawable/ic_menus"
-                android:title="@string/lesson_1" />
-
-            <item
-                android:id="@+id/pelajaran2"
-                android:icon="@drawable/ic_menus"
-                android:title="@string/lesson_2" />
-
-            <item
-                android:id="@+id/pelajaran3"
-                android:icon="@drawable/ic_menus"
-                android:title="@string/lesson_3" />
-
-            <item
-                android:id="@+id/pelajaran4"
-                android:icon="@drawable/ic_menus"
-                android:title="@string/lesson_4" />
-
-            <item
-                android:id="@+id/pelajaran5"
-                android:icon="@drawable/ic_menus"
-                android:title="@string/lesson_5" />
-
-            <item
-                android:id="@+id/pelajaran6"
-                android:icon="@drawable/ic_menus"
-                android:title="@string/lesson_6" />
-
-            <item
-                android:id="@+id/pelajaran7"
-                android:icon="@drawable/ic_menus"
-                android:title="@string/lesson_7" />
-
-            <item
-                android:id="@+id/pelajaran8"
-                android:icon="@drawable/ic_menus"
-                android:title="@string/lesson_8" />
-
-            <item
-                android:id="@+id/pelajaran9"
-                android:icon="@drawable/ic_menus"
-                android:title="@string/lesson_9" />
-
-            <item
-                android:id="@+id/pelajaran10"
-                android:icon="@drawable/ic_menus"
-                android:title="@string/lesson_10" />
-            <item
-                android:id="@+id/pelajaran11"
-                android:icon="@drawable/ic_menus"
-                android:title="@string/lesson_11" />
-            <item
-                android:id="@+id/pelajaran12"
-                android:icon="@drawable/ic_menus"
-                android:title="@string/lesson_12" />
-            <item
-                android:id="@+id/pelajaran13"
-                android:icon="@drawable/ic_menus"
-                android:title="@string/lesson_13" />
-            <item
-                android:id="@+id/pelajaran14"
-                android:icon="@drawable/ic_menus"
-                android:title="@string/lesson_14" />
-
-        </menu> -->
+        <!-- <item android:title="Data Loaader">
+             <menu>
+                 <item
+                     android:id="@+id/pelajaran121"
+                     android:icon="@drawable/ic_file"
+                     android:title="Memuat dan Menampilkan Data Yang Daiambil" />
+             </menu>
+         </item> -->
+        <!--   <menu>
+                 <item
+                     android:id="@+id/Lesson1"
+                     android:icon="@drawable/ic_menus"
+                     android:title="@string/dashboard" />
+                 <item
+                     android:id="@+id/pelajaran1"
+                     android:icon="@drawable/ic_menus"
+                     android:title="@string/lesson_1" />
+                 <item
+                     android:id="@+id/pelajaran2"
+                     android:icon="@drawable/ic_menus"
+                     android:title="@string/lesson_2" />
+                 <item
+                     android:id="@+id/pelajaran3"
+                     android:icon="@drawable/ic_menus"
+                     android:title="@string/lesson_3" />
+                 <item
+                     android:id="@+id/pelajaran4"
+                     android:icon="@drawable/ic_menus"
+                     android:title="@string/lesson_4" />
+                 <item
+                     android:id="@+id/pelajaran5"
+                     android:icon="@drawable/ic_menus"
+                     android:title="@string/lesson_5" />
+                 <item
+                     android:id="@+id/pelajaran6"
+                     android:icon="@drawable/ic_menus"
+                     android:title="@string/lesson_6" />
+                 <item
+                     android:id="@+id/pelajaran7"
+                     android:icon="@drawable/ic_menus"
+                     android:title="@string/lesson_7" />
+                 <item
+                     android:id="@+id/pelajaran8"
+                     android:icon="@drawable/ic_menus"
+                     android:title="@string/lesson_8" />
+                 <item
+                     android:id="@+id/pelajaran9"
+                     android:icon="@drawable/ic_menus"
+                     android:title="@string/lesson_9" />
+                 <item
+                     android:id="@+id/pelajaran10"
+                     android:icon="@drawable/ic_menus"
+                     android:title="@string/lesson_10" />
+                 <item
+                     android:id="@+id/pelajaran11"
+                     android:icon="@drawable/ic_menus"
+                     android:title="@string/lesson_11" />
+                 <item
+                     android:id="@+id/pelajaran12"
+                     android:icon="@drawable/ic_menus"
+                     android:title="@string/lesson_12" />
+                 <item
+                     android:id="@+id/pelajaran13"
+                     android:icon="@drawable/ic_menus"
+                     android:title="@string/lesson_13" />
+                 <item
+                     android:id="@+id/pelajaran14"
+                     android:icon="@drawable/ic_menus"
+                     android:title="@string/lesson_14" />
+             </menu> -->
 
     </group>
-    <item android:title="About">
+    <item android:title="@string/about">
         <menu>
             <item
                 android:id="@+id/about"

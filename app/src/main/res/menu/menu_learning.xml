@@ -3,13 +3,12 @@
 
     <item
         android:id="@+id/learning"
-        android:icon="@drawable/ic_action_name"
-        android:title="Learning" />
+        android:icon="@drawable/ic_book"
+        android:title="@string/learning" />
 
     <item
         android:id="@+id/demo"
-        android:icon="@drawable/ic_play"
-        android:title="Demo" />
-
+        android:icon="@drawable/ic_demo"
+        android:title="@string/demo" />
 
 </menu>

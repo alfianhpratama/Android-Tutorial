@@ -18,7 +18,6 @@ import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
 public class LessonFragment extends Fragment {
 
-    private BottomNavigationView bottomNavigation;
     private Fragment fragment;
     private FragmentManager fragmentManager;
     public static String pdf_c = "";
@@ -42,7 +41,7 @@ public class LessonFragment extends Fragment {
         pdf_c = getArguments().getString("pdf");
         data_c = getArguments().getStringArray("data");
 
-        bottomNavigation = rootView.findViewById(R.id.bottom_navigation);
+        BottomNavigationView bottomNavigation = rootView.findViewById(R.id.bottom_navigation);
         bottomNavigation.inflateMenu(R.menu.menu_learning);
         fragmentManager = getFragmentManager();
         final Bundle key = new Bundle();

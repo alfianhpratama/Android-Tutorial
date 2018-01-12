@@ -22,7 +22,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import alfianagramerry.mobpro.tugasbesar.androidtutorial.Learning.Learning;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.LessonFragment;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Root.AboutUs;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Root.Utama;
@@ -101,7 +100,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 fragment.setArguments(key);
                 callFragment(fragment);
                 break;
-
+/*
             case R.id.pelajaran21:
                 fragment = new LessonFragment();
                 key.putString("title",getResources().getString(R.string.judul4));
@@ -205,7 +204,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 key.putStringArray("data", getResources().getStringArray(R.array.judul_demo15));
                 fragment.setArguments(key);
                 callFragment(fragment);
-                break;
+                break; */
 
             case R.id.about:
                 fragment = new AboutUs();
