@@ -17,7 +17,7 @@ public class AboutUs extends Fragment {
                              Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.activity_about_us, container, false);
-        getActivity().setTitle("About Us");
+        getActivity().setTitle("Tentang Kami");
 
         return rootView;
     }

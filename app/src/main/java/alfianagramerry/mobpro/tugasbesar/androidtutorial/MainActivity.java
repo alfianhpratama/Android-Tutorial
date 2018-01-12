@@ -209,6 +209,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 fragment.setArguments(key);
                 callFragment(fragment);
                 break;
+            case R.id.pelajaran131:
+                fragment = new LessonFragment();
+                key.putString("title",getResources().getString(R.string.judul16));
+                key.putString("pdf",getResources().getString(R.string.materi16));
+                key.putStringArray("data", getResources().getStringArray(R.array.judul_demo16));
+                fragment.setArguments(key);
+                callFragment(fragment);
+                break;
+            case R.id.pelajaran132:
+                fragment = new LessonFragment();
+                key.putString("title",getResources().getString(R.string.judul17));
+                key.putString("pdf",getResources().getString(R.string.materi17));
+                key.putStringArray("data", getResources().getStringArray(R.array.judul_demo17));
+                fragment.setArguments(key);
+                callFragment(fragment);
+                break;
 
             case R.id.about:
                 fragment = new AboutUs();

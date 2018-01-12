@@ -40,7 +40,6 @@ public class KeyboardSamples extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.git_menu, menu);
         return true;

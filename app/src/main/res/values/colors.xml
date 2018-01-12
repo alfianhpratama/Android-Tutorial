@@ -3,8 +3,8 @@
     <color name="colorPrimary">#f19d16</color>
     <color name="colorPrimaryDark">#c27d0f</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorCheck">#00b386</color>
-    <color name="colorUncheck">#002b0f</color>
+    <color name="colorCheck">#ffb366</color>
+    <color name="colorUncheck">#663300</color>
     <color name="orange">#FFB000</color>
     <color name="buttonLabel">#d3d3d3</color>
     <color name="red_background">#CC0000</color>
@@ -13,22 +13,23 @@
     <color name="default_background">#E0E0E0</color>
 
     <!-- Screens background color-->
-    <color name="bg_screen1">#004d4d</color>
-    <color name="bg_screen2">#330033</color>
+    <color name="bg_screen1">#00b386</color>
+    <color name="bg_screen2">#009900</color>
     <color name="bg_screen3">#3395ff</color>
-    <color name="bg_screen4">#00b386</color>
+    <color name="bg_screen4">#994d00</color>
 
     <!-- dots inactive colors -->
-    <color name="dot_dark_screen2">#d1395c</color>
-    <color name="dot_dark_screen1">#14a895</color>
+    <color name="dot_dark_screen1">#339966</color>
+    <color name="dot_dark_screen2">#009900</color>
     <color name="dot_dark_screen3">#2278d4</color>
-    <color name="dot_dark_screen4">#a854d4</color>
+    <color name="dot_dark_screen4">#cc6600</color>
 
     <!-- dots active colors -->
-    <color name="dot_light_screen2">#f98da5</color>
-    <color name="dot_light_screen1">#8cf9eb</color>
+    <color name="dot_light_screen1">#8cd9b3</color>
+    <color name="dot_light_screen2">#66ff66</color>
     <color name="dot_light_screen3">#93c6fd</color>
-    <color name="dot_light_screen4">#e4b5fc</color>
+    <color name="dot_light_screen4">#ffb366</color>
+
     <color name="background_navigation">#fff</color>
     <color name="icon_tint">#000</color>
     <color name="bg_utamanya">#fffbf5</color>

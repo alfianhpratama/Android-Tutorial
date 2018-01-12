@@ -206,7 +206,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="@string/develop"
+                android:text="@string/aam"
                 android:layout_marginBottom="@dimen/hanya_aja"
                 android:textSize="12sp" />
 

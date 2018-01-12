@@ -3,7 +3,7 @@
 
     <string name="dibuka">Dibuka</string>
     <string name="ditutup">Ditutup</string>
-    <string name="dashboard">Dashbor</string>
+    <string name="dashboard">Dasbor</string>
     <string name="lesson_1">1. TwoActivity 1</string>
     <string name="lesson_2">2. KeyboardSample</string>
     <string name="lesson_3">3. PhoneNumberSpinner</string>
@@ -35,9 +35,11 @@
     <string name="materi13">8.1 Notifikasi.pdf</string>
     <string name="materi14">9.1 Shared Preference.pdf</string>
     <string name="materi15">11.1 B Menambahkan Penyedia Konten ke Database Anda.pdf</string>
+    <string name="materi16">GoogleMaps.pdf</string>
+    <string name="materi17">Proximity and Gyroscope.pdf</string>
 
-    <string name="judul1">Memasang Android Studio dan Hello World</string>
-    <string name="judul2">UI Interaktif Pertama</string>
+    <string name="judul1">Android Studio dan Hello World</string>
+    <string name="judul2">UI Interaktif</string>
     <string name="judul3">Layout</string>
     <string name="judul4">Aktivitas</string>
     <string name="judul5">Keyboard, Kontrol Masukan, Peringatan dan Picker</string>
@@ -50,19 +52,16 @@
     <string name="judul12">Membuat Async Task</string>
     <string name="judul13">Notifikasi</string>
     <string name="judul14">SharedPreference</string>
-    <string name="judul15">Penyedia Materi ke Database anda</string>
+    <string name="judul15">Penyedia Materi ke Databas</string>
     <string name="judul16">Map maping</string>
     <string name="judul17">Proximity dan Gyroscope</string>
 
     <string-array name="judul_demo1">
         <item>HelloWorld</item>
     </string-array>
-    <string-array name="judul_demo2">
-    </string-array>
-    <string-array name="judul_demo3">
-    </string-array>
-    <string-array name="judul_demo4">
-    </string-array>
+    <string-array name="judul_demo2"></string-array>
+    <string-array name="judul_demo3"></string-array>
+    <string-array name="judul_demo4"></string-array>
     <string-array name="judul_demo5">
         <item>KeyboardSamples</item>
         <item>PhoneNumberSpinner</item>
@@ -81,10 +80,8 @@
     <string-array name="judul_demo9">
         <item>MaterialMe</item>
     </string-array>
-    <string-array name="judul_demo10">
-    </string-array>
-    <string-array name="judul_demo11">
-    </string-array>
+    <string-array name="judul_demo10"></string-array>
+    <string-array name="judul_demo11"></string-array>
     <string-array name="judul_demo12">
         <item>AsyncTask</item>
     </string-array>
@@ -98,7 +95,9 @@
         <item>WordListSql</item>
     </string-array>
     <string-array name="judul_demo16">
-        <item>MapMaping</item>
+        <!--Hapus kalo tidak ada aplikasinya -->
+        <!-- <item>Map</item>  ini nama packed di programLain -->
+        <!--End -->
     </string-array>
     <string-array name="judul_demo17">
         <item>GyroscopeSensor</item>
@@ -265,7 +264,7 @@
     <string name="text_header_reply">Reply Received</string>
     <string name="android_tutorial">Android Tutorial</string>
     <string name="gambar">Gambar</string>
-    <string name="develop">Alfian Agra Merry Production</string>
+    <string name="develop">Developed by Alfian Agra Merry</string>
     <string name="learning">Learning</string>
     <string name="demo">Demo</string>
     <string name="judul_navigation">Android Tutorial</string>
@@ -332,15 +331,6 @@
     <string name="empty_not_saved">Word not saved because it is empty.</string>
     <string name="selamat_datang">Selamat Datang</string>
     <string name="detail_data">Detail data</string>
-    <string name="memulai">Memulai</string>
-    <string name="aktivitas">Aktivitas</string>
-    <string name="interaksi_pengguna">Interaksi Pengguna</string>
-    <string name="pengalaman_pengguna">Pengalaman Pengguna</string>
-    <string name="uji_aplikasi">Uji Aplikasi</string>
-    <string name="tugas_layar_belakang">Tugas Layar Belakang</string>
-    <string name="memicu_menjadwalkan_dan_mengoptimalkan_tugas_latar_belakang">Memicu, menjadwalkan, dan Mengoptimalkan Tugas Latar Belakang</string>
-    <string name="preferensi_dan_setelan">Preferensi dan Setelan</string>
-    <string name="about">About</string>
 
     <string name="next">NEXT</string>
     <string name="skip">SKIP</string>
@@ -366,6 +356,20 @@
     <string name="android_fundamental_merupakan_materi_yang_ada_disini">Android Fundamental merupakan materi yang ada disini</string>
     <string name="tools">Tools</string>
     <string name="gunakan_android_studio_untuk_membantu_dalam_membangun_aplikasi_android">Gunakan Android Studio untuk membantu dalam membangun Aplikasi Android</string>
+    <string name="hello_word">Hello Word!</string>
+    <string name="aam">Alfian Agra Merry</string>
+    <string name="memulai">Memulai</string>
+    <string name="aktivitas">Aktivitas</string>
+    <string name="interaksi_pengguna">Interaksi Pengguna</string>
+    <string name="pengalaman_pengguna">Pengalaman Pengguna</string>
+    <string name="uji_aplikasi">Uji Aplikasi</string>
+    <string name="tugas_layar_belakang">Tugas Layar Belakang</string>
+    <string name="memicu_menjadwalkan_dan_mengoptimalkan_tugas_latar_belakang">Memicu, menjadwalkan, dan Mengoptimalkan Tugas Latar Belakang</string>
+    <string name="preferensi_dan_setelan">Preferensi dan Setelan</string>
+    <string name="berbagi_data">Berbagi data</string>
+    <string name="sensor">Sensor</string>
+    <string name="about">About</string>
+    <string name="about_as">Info</string>
 
 
 </resources>

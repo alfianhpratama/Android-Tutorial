@@ -24,7 +24,7 @@
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="16dp"
             android:text="@string/judul_navigation"
-            android:textColor="#003326"
+            android:textColor="#fff"
             android:textSize="10pt"
             android:textStyle="bold"
             tools:ignore="RtlHardcoded" />

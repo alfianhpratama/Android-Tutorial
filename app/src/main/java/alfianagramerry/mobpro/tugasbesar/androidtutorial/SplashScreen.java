@@ -41,7 +41,7 @@ public class SplashScreen extends AppCompatActivity {
         changeStatusBarColor();
 
         Drawable progressDrawable = progressBar.getProgressDrawable().mutate();
-        progressDrawable.setColorFilter(Color.WHITE, android.graphics.PorterDuff.Mode.SRC_IN);
+        progressDrawable.setColorFilter(Color.rgb(66,40,14), android.graphics.PorterDuff.Mode.SRC_IN);
         progressBar.setProgressDrawable(progressDrawable);
 
         new Thread(new Runnable() {

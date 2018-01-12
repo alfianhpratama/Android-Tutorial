@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright 2016 Google Inc.
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright 2016 Google Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -14,19 +13,24 @@ See the License for the specific language governing permissions and
 limitations under the License. -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/nav_toolbar" />
 
     <EditText
         android:id="@+id/edit_word"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/big_padding"
+        android:layout_marginTop="@dimen/big_padding"
         android:fontFamily="sans-serif-light"
         android:hint="@string/hint_word"
         android:inputType="textAutoComplete"
         android:padding="@dimen/small_padding"
-        android:layout_marginBottom="@dimen/big_padding"
-        android:layout_marginTop="@dimen/big_padding"
         android:textSize="18sp" />
 
     <Button

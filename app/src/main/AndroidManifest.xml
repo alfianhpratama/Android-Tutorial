@@ -161,11 +161,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Root.AboutUs" />
         <activity android:name=".ProgramLain.HelloSharedPrefs.HelloSharedPrefs" />
         <activity android:name=".ProgramLain.WordListSql.WordListSql" />
         <activity android:name=".ProgramLain.WordListSql.EditWordActivity" />
-        <activity android:name=".Welcome.WelcomeActivity"></activity>
+        <activity android:name=".Welcome.WelcomeActivity" />
+        <activity android:name=".ProgramLain.HelloWorld.HelloWorld"></activity>
     </application>
 
 </manifest>
