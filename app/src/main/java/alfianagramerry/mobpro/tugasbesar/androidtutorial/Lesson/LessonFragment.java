@@ -36,10 +36,10 @@ public class LessonFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.activity_lesson, container, false);
-        getActivity().setTitle("Lesson 1");
         title_c = getArguments().getString("title");
         pdf_c = getArguments().getString("pdf");
         data_c = getArguments().getStringArray("data");
+        getActivity().setTitle(title_c);
 
         BottomNavigationView bottomNavigation = rootView.findViewById(R.id.bottom_navigation);
         bottomNavigation.inflateMenu(R.menu.menu_learning);

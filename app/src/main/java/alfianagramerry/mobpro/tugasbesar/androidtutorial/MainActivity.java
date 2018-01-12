@@ -4,9 +4,11 @@ package alfianagramerry.mobpro.tugasbesar.androidtutorial;
  * Created by Alfian Hadi Pratama on 17/12/2017.
  */
 
+import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.ActivityNotFoundException;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
@@ -18,10 +20,12 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.Learning.Learning;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Lesson.LessonFragment;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Root.AboutUs;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.Root.Utama;
@@ -281,6 +285,41 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         intent.addFlags(flags);
         return intent;
+    }
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            exitByBackKey();
+
+            //moveTaskToBack(false);
+
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
+    protected void exitByBackKey() {
+
+        AlertDialog alertbox = new AlertDialog.Builder(this)
+                .setMessage("Do you want to exit application?")
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+
+                    // do something when the button is clicked
+                    public void onClick(DialogInterface arg0, int arg1) {
+
+                        finish();
+                        //close();
+
+
+                    }
+                })
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+
+                    // do something when the button is clicked
+                    public void onClick(DialogInterface arg0, int arg1) {
+                    }
+                })
+                .show();
+
     }
 
 }

@@ -21,7 +21,7 @@
     <!-- Isi konten -->
     <string name="materi1">1.1 Memasang Android Studio.pdf</string>
     <string name="materi2">1.2 Menggunakan Layout.pdf</string>
-    <string name="materi3">1.3 Menggunakan  Elemen Teks.pdf</string>
+    <string name="materi3">1.3 Menggunakan Elemen Teks.pdf</string>
     <string name="materi4">2.1 Membuat dan Memulai Aktivitas.pdf</string>
     <string name="materi5">4.1 Menggunakan Keyboard, Kontrol Masukan, Peringatan dan Picker.pdf</string>
     <string name="materi6">4.2 Menggunakan Menu Opsi.pdf</string>
@@ -35,33 +35,32 @@
     <string name="materi14">9.1 Shared Preference.pdf</string>
     <string name="materi15">11.1 B Menambahkan Penyedia Konten ke Database Anda.pdf</string>
 
-    <string name="judul1">Memasang Android Studio dan Menjalankan Hello World</string>
-    <string name="judul2">Membuat UI Interaktif Pertama Anda</string>
-    <string name="judul3">Menggunakan Layout</string>
-    <string name="judul4">Membuat dan Memulai Aktivitas</string>
-    <string name="judul5">Menggunakan Keyboard, Kontrol Masukan, Peringatan dan Picker</string>
-    <string name="judul6">Menggunakan Menu Opsi dan Tombol Radio</string>
-    <string name="judul7">Menggunakan Bilah Aplikasi dan Tab Untuk Navigasi</string>
-    <string name="judul8">Membuat Recycler View</string>
+    <string name="judul1">Memasang Android Studio dan Hello World</string>
+    <string name="judul2">UI Interaktif Pertama</string>
+    <string name="judul3">Layout</string>
+    <string name="judul4">Aktivitas</string>
+    <string name="judul5">Keyboard, Kontrol Masukan, Peringatan dan Picker</string>
+    <string name="judul6">Menu Opsi dan Tombol Radio</string>
+    <string name="judul7">Bilah Aplikasi dan Tab Untuk Navigasi</string>
+    <string name="judul8">Recycler View</string>
     <string name="judul9">Desain Material: Daftar, Kartu dan Warna</string>
-    <string name="judul10">Mendukung Landscape, Beberapa Ukuran Layar, dan Pelokalan</string>
-    <string name="judul11">Menggunakan Espresso Untuk Menguji UI Anda</string>
+    <string name="judul10">Landscape, Beberapa Ukuran Layar, dan Pelokalan</string>
+    <string name="judul11">Espresso untuk Uji UI</string>
     <string name="judul12">Membuat Async Task</string>
     <string name="judul13">Notifikasi</string>
     <string name="judul14">SharedPreference</string>
-    <string name="judul15">Menambahkan Penyedia Materi ke Database anda</string>
+    <string name="judul15">Penyedia Materi ke Database anda</string>
+    <string name="judul16">Map maping</string>
+    <string name="judul17">Proximity dan Gyroscope</string>
 
     <string-array name="judul_demo1">
         <item>HelloWorld</item>
     </string-array>
     <string-array name="judul_demo2">
-        <item />
     </string-array>
     <string-array name="judul_demo3">
-        <item />
     </string-array>
     <string-array name="judul_demo4">
-        <item />
     </string-array>
     <string-array name="judul_demo5">
         <item>KeyboardSamples</item>
@@ -82,10 +81,8 @@
         <item>MaterialMe</item>
     </string-array>
     <string-array name="judul_demo10">
-        <item />
     </string-array>
     <string-array name="judul_demo11">
-        <item />
     </string-array>
     <string-array name="judul_demo12">
         <item>AsyncTask</item>
@@ -98,6 +95,12 @@
     </string-array>
     <string-array name="judul_demo15">
         <item>WordListSql</item>
+    </string-array>
+    <string-array name="judul_demo16">
+        <item>MapMaping</item>
+    </string-array>
+    <string-array name="judul_demo17">
+        <item>GyroscopeSensor</item>
     </string-array>
 
     <!-- End Isi Konten -->

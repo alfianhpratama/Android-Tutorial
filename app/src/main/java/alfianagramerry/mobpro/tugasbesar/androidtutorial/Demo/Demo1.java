@@ -8,6 +8,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.support.annotation.RequiresApi;
+import android.support.annotation.StringRes;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -17,6 +18,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -66,11 +69,12 @@ public class Demo1 extends Fragment {
 
     private void ambilData() {
         String[] demoList = data;
-        TextView textView = getActivity().findViewById(R.id.warning_demo);
-        if (data==null){
+
+        if (data==null || data.length==0){
+            TextView textView = getActivity().findViewById(R.id.warning_demo);
+            textView.setText("tes");
             getFragmentManager().popBackStack();
         }else {
-            textView.setVisibility(View.GONE);
             for (int i = 0; i < demoList.length; i++) {
                 listData.add(new ListData(demoList[i]));
             }
