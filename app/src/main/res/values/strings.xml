@@ -19,9 +19,87 @@
     <string name="lesson_14">14. WordListSql</string>
     <string name="about_us">About Us</string>
     <!-- Isi konten -->
-    <string name="isi_keyboardsample">Dalam praktik ini, Anda akan membuat dan membangun aplikasi baru yang bernama Keyboard Samples untuk bereksperimen dengan atribut android:inputType untuk elemen UI EditText. Anda akan mengubah keyboard sehingga akan menyarankan pembetulan ejaan dan mengubah kapitalisasi setiap kalimat, seperti yang ditampilkan di sebelah kiri gambar di bawah ini. Untuk menyederhanakan aplikasi, Anda akan menampilkan teks yang dimasukkan dalam pesan toast.
-Anda juga akan mengubah keyboard menjadi keyboard yang menampilkan simbol "@" di lokasi yang umum untuk memasukkan alamat email, dan menjadi keypad ponsel untuk memasukkan nomor telepon, seperti yang ditampilkan di sebelah kiri dan di tengah gambar di bawah ini. Sebagai tantangan, Anda akan mengimplementasikan listener untuk kunci tindakan di keyboard untuk mengirimkan intent yang implisit ke aplikasi lain untuk memutar nomor telepon.
-</string>
+    <string name="materi1">1.1 Memasang Android Studio.pdf</string>
+    <string name="materi2">1.2 Menggunakan Layout.pdf</string>
+    <string name="materi3">1.3 Menggunakan  Elemen Teks.pdf</string>
+    <string name="materi4">2.1 Membuat dan Memulai Aktivitas.pdf</string>
+    <string name="materi5">4.1 Menggunakan Keyboard, Kontrol Masukan, Peringatan dan Picker.pdf</string>
+    <string name="materi6">4.2 Menggunakan Menu Opsi.pdf</string>
+    <string name="materi7">4.3 Menggunakan Bilah Aplikasi Dan Tab Navigasi.pdf</string>
+    <string name="materi8">4.4 Membuat Recycler View.pdf</string>
+    <string name="materi9">5.2 Desain Material.pdf</string>
+    <string name="materi10">5.3 Mendukung Landscape.pdf</string>
+    <string name="materi11">6.1 Menggunakan Espresso Untuk Menguji UI Anda.pdf</string>
+    <string name="materi12">7.1 Membuat Async Task.pdf</string>
+    <string name="materi13">8.1 Notifikasi.pdf</string>
+    <string name="materi14">9.1 Shared Preference.pdf</string>
+    <string name="materi15">11.1 B Menambahkan Penyedia Konten ke Database Anda.pdf</string>
+
+    <string name="judul1">Memasang Android Studio dan Menjalankan Hello World</string>
+    <string name="judul2">Membuat UI Interaktif Pertama Anda</string>
+    <string name="judul3">Menggunakan Layout</string>
+    <string name="judul4">Membuat dan Memulai Aktivitas</string>
+    <string name="judul5">Menggunakan Keyboard, Kontrol Masukan, Peringatan dan Picker</string>
+    <string name="judul6">Menggunakan Menu Opsi dan Tombol Radio</string>
+    <string name="judul7">Menggunakan Bilah Aplikasi dan Tab Untuk Navigasi</string>
+    <string name="judul8">Membuat Recycler View</string>
+    <string name="judul9">Desain Material: Daftar, Kartu dan Warna</string>
+    <string name="judul10">Mendukung Landscape, Beberapa Ukuran Layar, dan Pelokalan</string>
+    <string name="judul11">Menggunakan Espresso Untuk Menguji UI Anda</string>
+    <string name="judul12">Membuat Async Task</string>
+    <string name="judul13">Notifikasi</string>
+    <string name="judul14">SharedPreference</string>
+    <string name="judul15">Menambahkan Penyedia Materi ke Database anda</string>
+
+    <string-array name="judul_demo1">
+        <item>HelloWorld</item>
+    </string-array>
+    <string-array name="judul_demo2">
+        <item></item>
+    </string-array>
+    <string-array name="judul_demo3">
+        <item></item>
+    </string-array>
+    <string-array name="judul_demo4">
+        <item></item>
+    </string-array>
+    <string-array name="judul_demo5">
+        <item>KeyboardSamples</item>
+        <item>PhoneNumberSpinner</item>
+        <item>DateTimePicker</item>
+        <item>AlertSample</item>
+    </string-array>
+    <string-array name="judul_demo6">
+        <item>DroidCafe</item>
+    </string-array>
+    <string-array name="judul_demo7">
+        <item>TabLateral</item>
+    </string-array>
+    <string-array name="judul_demo8">
+        <item>Recycler</item>
+    </string-array>
+    <string-array name="judul_demo9">
+        <item>MaterialMe</item>
+    </string-array>
+    <string-array name="judul_demo10">
+        <item></item>
+    </string-array>
+    <string-array name="judul_demo11">
+        <item></item>
+    </string-array>
+    <string-array name="judul_demo12">
+        <item>AsyncTask</item>
+    </string-array>
+    <string-array name="judul_demo13">
+        <item>NotifyMe</item>
+    </string-array>
+    <string-array name="judul_demo14">
+        <item>HelloSharedPrefs</item>
+    </string-array>
+    <string-array name="judul_demo15">
+        <item>WordListSql</item>
+    </string-array>
+
     <!-- End Isi Konten -->
 
     <!-- TODO: Remove or change this placeholder text -->
@@ -33,18 +111,6 @@ Anda juga akan mengubah keyboard menjadi keyboard yang menampilkan simbol "@" di
     <string name="show">Show</string>
     <string name="enter_phone">Enter Phone</string>
     <string name="phonenumber">phonenumber</string>
-
-
-    <string-array name="judul_demo1">
-        <item>HelloWorld</item>
-    </string-array>
-    <string-array name="judul_demo2">
-        <item>HelloToast</item>
-    </string-array>
-    <string-array name="judul_demo3">
-        <item>HelloWorld</item>
-    </string-array>
-
 
     <!--Who Wrote It? -->
     <string name="instructions">Enter a full or partial book name or text from the book. Click Search Books to find out who wrote the book. </string>
@@ -262,5 +328,6 @@ Anda juga akan mengubah keyboard menjadi keyboard yang menampilkan simbol "@" di
     <string name="empty_not_saved">Word not saved because it is empty.</string>
     <string name="selamat_datang">Selamat Datang</string>
     <string name="detail_data">Detail data</string>
+
 
 </resources>

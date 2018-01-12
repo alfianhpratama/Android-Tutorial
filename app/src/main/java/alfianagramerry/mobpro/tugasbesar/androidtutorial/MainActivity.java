@@ -75,114 +75,134 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 callFragment(fragment);
                 break;
 
-            case R.id.pelajaran1:
-                fragment = new LessonFragment();
-                key.putString("title","Two Activities");
-                key.putString("pdf","TwoActivities.pdf");
-                key.putStringArray("data", getResources().getStringArray(R.array.judul_demo1));
-                fragment.setArguments(key);
-                callFragment(fragment);
-                break;
-
-            case R.id.pelajaran2:
-                fragment = new LessonFragment();
-                key.putString("title","Keyboard Samples");
-                key.putString("pdf","KeyboardSamples.pdf");
-                fragment.setArguments(key);
-                callFragment(fragment);
-                break;
-
-            case R.id.pelajaran3:
-                fragment = new LessonFragment();
-                key.putString("title","Phone Number Spinner");
-                key.putString("pdf","PhoneNumberSpinner.pdf");
-                fragment.setArguments(key);
-                callFragment(fragment);
-                break;
-
-            case R.id.pelajaran4:
-                fragment = new LessonFragment();
-                key.putString("title","Alert Sample");
-                key.putString("pdf","AlertSample.pdf");
-                fragment.setArguments(key);
-                callFragment(fragment);
-                break;
-
-            case R.id.pelajaran5:
-                fragment = new LessonFragment();
-                key.putString("title","Date Time Picker");
-                key.putString("pdf","DateTimePicker.pdf");
-                fragment.setArguments(key);
-                callFragment(fragment);
-                break;
-
-            case R.id.pelajaran6:
-                fragment = new LessonFragment();
-                key.putString("title","Droid Cafe");
-                key.putString("pdf","DroidCafe.pdf");
-                fragment.setArguments(key);
-                callFragment(fragment);
-                break;
-
-            case R.id.pelajaran7:
-                fragment = new LessonFragment();
-                key.putString("title","Tab Lateral");
-                key.putString("pdf","TabLateral.pdf");
-                fragment.setArguments(key);
-                callFragment(fragment);
-                break;
-
-            case R.id.pelajaran8:
-                fragment = new LessonFragment();
-                key.putString("title","Recycler View");
-                key.putString("pdf","RecyclerView.pdf");
-                fragment.setArguments(key);
-                callFragment(fragment);
-                break;
-
-            case R.id.pelajaran9:
-                fragment = new LessonFragment();
-                key.putString("title","Material Me");
-                key.putString("pdf","MaterialMe.pdf");
-                key.putString("app", "MaterialMe");
-                fragment.setArguments(key);
-                callFragment(fragment);
-                break;
-
-            case R.id.pelajaran10:
-                fragment = new LessonFragment();
-                key.putString("title","Async Task");
-                key.putString("pdf","AsyncTask.pdf");
-                fragment.setArguments(key);
-                callFragment(fragment);
-                break;
-
             case R.id.pelajaran11:
                 fragment = new LessonFragment();
-                key.putString("title","Who Write App");
-                key.putString("pdf","WhoWriteApp.pdf");
+                key.putString("title",getResources().getString(R.string.judul1));
+                key.putString("pdf",getResources().getString(R.string.materi1));
+                key.putStringArray("data", getResources().getStringArray(R.array.judul_demo1));
                 fragment.setArguments(key);
                 callFragment(fragment);
                 break;
 
             case R.id.pelajaran12:
                 fragment = new LessonFragment();
-                key.putString("title","Notify Me");
-                key.putString("pdf","NotifyMe.pdf");
+                key.putString("title",getResources().getString(R.string.judul2));
+                key.putString("pdf",getResources().getString(R.string.materi2));
+                key.putStringArray("data", getResources().getStringArray(R.array.judul_demo2));
                 fragment.setArguments(key);
                 callFragment(fragment);
                 break;
+
             case R.id.pelajaran13:
                 fragment = new LessonFragment();
-                key.putString("title","HelloSharedPreference");
-                key.putString("pdf","SharedPreference.pdf");
+                key.putString("title",getResources().getString(R.string.judul3));
+                key.putString("pdf",getResources().getString(R.string.materi3));
+                key.putStringArray("data", getResources().getStringArray(R.array.judul_demo3));
                 fragment.setArguments(key);
                 callFragment(fragment);
                 break;
-            case R.id.pelajaran14:
+
+            case R.id.pelajaran21:
                 fragment = new LessonFragment();
-                key.putString("title","WordListSql");
-                key.putString("pdf","WordList.pdf");
+                key.putString("title",getResources().getString(R.string.judul4));
+                key.putString("pdf",getResources().getString(R.string.materi4));
+                key.putStringArray("data", getResources().getStringArray(R.array.judul_demo4));
+                fragment.setArguments(key);
+                callFragment(fragment);
+                break;
+
+            case R.id.pelajaran41:
+                fragment = new LessonFragment();
+                key.putString("title",getResources().getString(R.string.judul5));
+                key.putString("pdf",getResources().getString(R.string.materi5));
+                key.putStringArray("data", getResources().getStringArray(R.array.judul_demo5));
+                fragment.setArguments(key);
+                callFragment(fragment);
+                break;
+
+            case R.id.pelajaran42:
+                fragment = new LessonFragment();
+                key.putString("title",getResources().getString(R.string.judul6));
+                key.putString("pdf",getResources().getString(R.string.materi6));
+                key.putStringArray("data", getResources().getStringArray(R.array.judul_demo6));
+                fragment.setArguments(key);
+                callFragment(fragment);
+                break;
+
+            case R.id.pelajaran43:
+                fragment = new LessonFragment();
+                key.putString("title",getResources().getString(R.string.judul7));
+                key.putString("pdf",getResources().getString(R.string.materi7));
+                key.putStringArray("data", getResources().getStringArray(R.array.judul_demo7));
+                fragment.setArguments(key);
+                callFragment(fragment);
+                break;
+
+            case R.id.pelajaran44:
+                fragment = new LessonFragment();
+                key.putString("title",getResources().getString(R.string.judul8));
+                key.putString("pdf",getResources().getString(R.string.materi8));
+                key.putStringArray("data", getResources().getStringArray(R.array.judul_demo8));
+                fragment.setArguments(key);
+                callFragment(fragment);
+                break;
+
+            case R.id.pelajaran52:
+                fragment = new LessonFragment();
+                key.putString("title",getResources().getString(R.string.judul9));
+                key.putString("pdf",getResources().getString(R.string.materi9));
+                key.putStringArray("data", getResources().getStringArray(R.array.judul_demo9));
+                fragment.setArguments(key);
+                callFragment(fragment);
+                break;
+
+            case R.id.pelajaran53:
+                fragment = new LessonFragment();
+                key.putString("title",getResources().getString(R.string.judul10));
+                key.putString("pdf",getResources().getString(R.string.materi10));
+                key.putStringArray("data", getResources().getStringArray(R.array.judul_demo10));
+                fragment.setArguments(key);
+                callFragment(fragment);
+                break;
+
+            case R.id.pelajaran61:
+                fragment = new LessonFragment();
+                key.putString("title",getResources().getString(R.string.judul11));
+                key.putString("pdf",getResources().getString(R.string.materi11));
+                key.putStringArray("data", getResources().getStringArray(R.array.judul_demo11));
+                fragment.setArguments(key);
+                callFragment(fragment);
+                break;
+
+            case R.id.pelajaran71:
+                fragment = new LessonFragment();
+                key.putString("title",getResources().getString(R.string.judul12));
+                key.putString("pdf",getResources().getString(R.string.materi12));
+                key.putStringArray("data", getResources().getStringArray(R.array.judul_demo12));
+                fragment.setArguments(key);
+                callFragment(fragment);
+                break;
+            case R.id.pelajaran81:
+                fragment = new LessonFragment();
+                key.putString("title",getResources().getString(R.string.judul13));
+                key.putString("pdf",getResources().getString(R.string.materi13));
+                key.putStringArray("data", getResources().getStringArray(R.array.judul_demo13));
+                fragment.setArguments(key);
+                callFragment(fragment);
+                break;
+            case R.id.pelajaran91:
+                fragment = new LessonFragment();
+                key.putString("title",getResources().getString(R.string.judul14));
+                key.putString("pdf",getResources().getString(R.string.materi14));
+                key.putStringArray("data", getResources().getStringArray(R.array.judul_demo14));
+                fragment.setArguments(key);
+                callFragment(fragment);
+                break;
+            case R.id.pelajaran112:
+                fragment = new LessonFragment();
+                key.putString("title",getResources().getString(R.string.judul15));
+                key.putString("pdf",getResources().getString(R.string.materi15));
+                key.putStringArray("data", getResources().getStringArray(R.array.judul_demo15));
                 fragment.setArguments(key);
                 callFragment(fragment);
                 break;
