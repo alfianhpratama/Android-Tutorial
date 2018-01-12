@@ -18,7 +18,7 @@
     <color name="bg_screen3">#3395ff</color>
     <color name="bg_screen4">#994d00</color>
 
-    <!-- dots inactive colors -->
+    <!-- dots colors -->
     <color name="dot_dark_screen1">#339966</color>
     <color name="dot_dark_screen2">#009900</color>
     <color name="dot_dark_screen3">#2278d4</color>
