@@ -342,15 +342,16 @@
     <string name="skip">SKIP</string>
     <string name="start">GOT IT</string>
 
-    <string name="slide_1_title">Hallo Developer!</string>
-    <string name="slide_2_title">Learn by Doing!</string>
-    <string name="slide_3_title">Go Developer!</string>
-    <string name="slide_4_title">Let\'s Star!</string>
+    <string name="slide_1_title">Halo Developer!</string>
+    <string name="slide_2_title">Belajar sambil Bekerja!</string>
+    <string name="slide_3_title">Ayo Developer!</string>
+    <string name="slide_4_title">Kita mulai!</string>
 
-    <string name="slide_1_desc">How do you think about build your own android app? What if we help you in building it?</string>
-    <string name="slide_2_desc">We learn and we do developing android application will be more exciting right?</string>
-    <string name="slide_3_desc">You will get a lot of knowledge and many examples in building your own application andorid here</string>
-    <string name="slide_4_desc">Let\'s start learning to make apps on your android device</string>
+    <string name="slide_1_desc">Menurut anda bagaimana membangun aplikasi android? Bagaimana kalau kita bantu dalam pembuatannya?</string>
+    <string name="slide_2_desc">Kita belajar sambil membangun sebuah aplikasi lebih menarik bukan?</string>
+    <string name="slide_3_desc">Kamu akan mendapatkan banyak ilmu mengenai membangun aplikasi android mu sendiri disini kawan</string>
+    <string name="slide_4_desc">Ayo kita mulai membangun aplikasi android buatakn sendiri yu</string>
+
     <string name="no_demo">Tidak ada Demo pada Bab ini</string>
 
 
