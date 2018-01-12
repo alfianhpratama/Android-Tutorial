@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#00b386</color>
-    <color name="colorPrimaryDark">#00664d</color>
+    <color name="colorPrimary">#f19d16</color>
+    <color name="colorPrimaryDark">#c27d0f</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorCheck">#00b386</color>
     <color name="colorUncheck">#002b0f</color>
@@ -31,7 +31,7 @@
     <color name="dot_light_screen4">#e4b5fc</color>
     <color name="background_navigation">#fff</color>
     <color name="icon_tint">#000</color>
-    <color name="bg_utamanya">#e6ffe6</color>
+    <color name="bg_utamanya">#fffbf5</color>
 
     <array name="array_dot_active">
         <item>@color/dot_light_screen1</item>
@@ -46,4 +46,9 @@
         <item>@color/dot_dark_screen3</item>
         <item>@color/dot_dark_screen4</item>
     </array>
+
+    <color name="biru">#80aaff</color>
+    <color name="kuning">#ffb366</color>
+    <color name="merah">#ff8080</color>
+    <color name="ungu">#ff66ff</color>
 </resources>

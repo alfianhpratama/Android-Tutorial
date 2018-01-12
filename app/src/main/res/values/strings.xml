@@ -268,8 +268,8 @@
     <string name="develop">Alfian Agra Merry Production</string>
     <string name="learning">Learning</string>
     <string name="demo">Demo</string>
-    <string name="judul_navigation">Mobile Programming</string>
-    <string name="little_desc">Have Fun Build Android Apps</string>
+    <string name="judul_navigation">Android Tutorial</string>
+    <string name="little_desc">Bermain dengan belajar android</string>
     <string name="versio">Versio</string>
     <string name="logo">Logo</string>
     <string name="droid_cafe_image_detail">Droid Cafe Image Detail</string>
@@ -357,6 +357,15 @@
     <string name="slide_4_desc">Ayo kita mulai membangun aplikasi android buatakn sendiri yu</string>
 
     <string name="no_demo">Tidak ada Demo pada Bab ini</string>
+    <string name="ayo_belajar_membuat_aplikasi_android">Ayo belajar membuat aplikasi Android di Perangkat Android mu</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="bahasa">Bahasa</string>
+    <string name="android_menggunakan_bahasa_java">Android menggunakan bahasa Java</string>
+    <string name="ser">Android User</string>
+    <string name="pengguna_terbanyak_diseluruh_dunia">Pengguna terbanyak diseluruh dunia</string>
+    <string name="android_fundamental_merupakan_materi_yang_ada_disini">Android Fundamental merupakan materi yang ada disini</string>
+    <string name="tools">Tools</string>
+    <string name="gunakan_android_studio_untuk_membantu_dalam_membangun_aplikasi_android">Gunakan Android Studio untuk membantu dalam membangun Aplikasi Android</string>
 
 
 </resources>

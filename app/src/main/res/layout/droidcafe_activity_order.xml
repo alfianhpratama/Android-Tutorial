@@ -25,6 +25,7 @@ limitations under the License. -->
         layout="@layout/nav_toolbar" />
 
     <TextView
+        android:layout_below="@id/toolbar"
         android:padding="@dimen/activity_vertical_margin"
         android:id="@+id/order_intro_text"
         android:layout_width="match_parent"

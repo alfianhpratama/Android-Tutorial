@@ -1,75 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_utamanya">
+    android:background="@color/bg_utamanya"
+    android:orientation="vertical">
+
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:orientation="vertical">
-
-        <TextView
-            style="@style/Base.DialogWindowTitle.AppCompat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="25dp"
-            android:layout_marginTop="25dp"
-            android:text="@string/selamat_datang"
-            android:textSize="40sp"
-            android:textStyle="bold" />
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="5dp">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="18dp"
-            android:background="@mipmap/logo" />
-
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@mipmap/logo"
+            tools:ignore="ContentDescription,NestedWeights,ObsoleteLayoutParam" />
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="8dp">
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
 
-            <ImageButton
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_marginRight="8dp"
-                android:layout_weight="1"
-                android:src="@drawable/donut_circle" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/selamat_datang"
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
-            <ImageButton
-                android:layout_width="0dp"
-                android:layout_height="150dp"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ayo_belajar_membuat_aplikasi_android"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="NestedWeights,RtlHardcoded">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="1.5"
+                android:background="@color/biru"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin"
+                tools:ignore="NestedWeights">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ser"
+                    android:textColor="#fff"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/pengguna_terbanyak_diseluruh_dunia"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
-                android:src="@drawable/donut_circle" />
+                android:background="@color/kuning"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bahasa"
+                    android:textColor="#fff"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/android_menggunakan_bahasa_java"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="8dp">
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:orientation="vertical">
 
-            <ImageButton
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_marginRight="8dp"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
-                android:src="@drawable/donut_circle" />
+                android:layout_marginBottom="6dp"
+                android:background="@color/merah"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin">
 
-            <ImageButton
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_weight="1"
-                android:src="@drawable/donut_circle" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tutorial"
+                    android:textColor="#fff"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/android_fundamental_merupakan_materi_yang_ada_disini"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="@color/ungu"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tools"
+                    android:textColor="#fff"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/gunakan_android_studio_untuk_membantu_dalam_membangun_aplikasi_android"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+            </LinearLayout>
         </LinearLayout>
 
 
     </LinearLayout>
 
-</ScrollView>
+
+</LinearLayout>
