@@ -32,6 +32,5 @@ limitations under the License. -->
         android:id="@+id/action_git"
         android:orderInCategory="40"
         android:title="@string/github_source_code"
-        android:icon="@drawable/ic_favorites_white"
         app:showAsAction="ifRoom" />
 </menu>

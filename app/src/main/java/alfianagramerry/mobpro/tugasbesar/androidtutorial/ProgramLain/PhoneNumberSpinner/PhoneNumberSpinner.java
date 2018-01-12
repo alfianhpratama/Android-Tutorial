@@ -16,6 +16,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.GitLink;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
 public class PhoneNumberSpinner extends AppCompatActivity implements
@@ -39,7 +40,7 @@ public class PhoneNumberSpinner extends AppCompatActivity implements
         setSupportActionBar(toolbar);
 
         // Create the spinner.
-        Spinner spinner = (Spinner) findViewById(R.id.label_spinner);
+        Spinner spinner = findViewById(R.id.label_spinner);
         if (spinner != null) {
             spinner.setOnItemSelectedListener(this);
         }
@@ -64,12 +65,12 @@ public class PhoneNumberSpinner extends AppCompatActivity implements
      * @param view  The view containing editText_main.
      */
     public void showText(View view) {
-        EditText editText = (EditText) findViewById(R.id.editText_main);
+        EditText editText = findViewById(R.id.editText_main);
         if (editText != null) {
             // Assign to showString both the entered string and mSpinnerLabel.
             String showString = (editText.getText().toString() + " - " + mSpinnerLabel);
             // Assign to phoneNumberResult the view for text_phonelabel to prepare to show it.
-            TextView phoneNumberResult = (TextView) findViewById(R.id.text_phonelabel);
+            TextView phoneNumberResult = findViewById(R.id.text_phonelabel);
             // Show the showString in the phoneNumberResult.
             if (phoneNumberResult != null) phoneNumberResult.setText(showString);
         }
@@ -107,10 +108,11 @@ public class PhoneNumberSpinner extends AppCompatActivity implements
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        String GIT_URL = GitLink.PNSPINNER;
         switch (item.getItemId()) {
             case R.id.github:
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("https://github.com/merrymarst/KeyboardSamples/"));
+                intent.setData(Uri.parse(GIT_URL));
                 startActivity(intent);
                 return true;
             default:

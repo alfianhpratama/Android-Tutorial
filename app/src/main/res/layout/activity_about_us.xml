@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e6ffe6"
+    android:background="@color/bg_utamanya"
     android:orientation="vertical"
     tools:context="alfianagramerry.mobpro.tugasbesar.androidtutorial.Root.AboutUs">
 
@@ -19,7 +19,8 @@
             android:layout_marginRight="@dimen/activity_horizontal_margin"
             android:layout_weight="1"
             android:background="@color/colorCheck"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded">
 
             <ImageView
                 android:id="@+id/gambar_alfian"
@@ -27,7 +28,8 @@
                 android:layout_height="120dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="@dimen/activity_horizontal_margin"
-                android:src="@drawable/al" />
+                android:src="@drawable/al"
+                android:contentDescription="@string/alfian" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -77,7 +79,8 @@
                 android:layout_height="120dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="@dimen/activity_horizontal_margin"
-                android:src="@drawable/ag" />
+                android:src="@drawable/ag"
+                android:contentDescription="@string/agra" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -130,7 +133,8 @@
             android:layout_marginRight="@dimen/activity_horizontal_margin"
             android:layout_weight="1"
             android:background="@color/colorCheck"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded">
 
             <ImageView
                 android:id="@+id/gambar_merry"
@@ -138,7 +142,8 @@
                 android:layout_height="120dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="@dimen/activity_horizontal_margin"
-                android:src="@drawable/mer" />
+                android:src="@drawable/mer"
+                android:contentDescription="@string/merry" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -187,7 +192,8 @@
                 android:layout_height="120dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="@dimen/activity_horizontal_margin"
-                android:background="@mipmap/logo" />
+                android:background="@mipmap/logo"
+                android:contentDescription="@string/logo" />
 
             <TextView
                 android:layout_width="wrap_content"

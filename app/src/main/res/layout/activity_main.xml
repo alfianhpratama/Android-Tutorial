@@ -6,6 +6,7 @@
     style="@style/ThemeOverlay.AppCompat.Light"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_utamanya"
     tools:context="alfianagramerry.mobpro.tugasbesar.androidtutorial.MainActivity">
 
     <LinearLayout
@@ -32,8 +33,7 @@
             <FrameLayout
                 android:id="@+id/content"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            </FrameLayout>
+                android:layout_height="match_parent" />
 
         </LinearLayout>
 

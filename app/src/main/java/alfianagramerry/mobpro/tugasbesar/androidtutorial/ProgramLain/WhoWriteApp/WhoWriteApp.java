@@ -31,6 +31,8 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.GitLink;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
 /**
@@ -112,10 +114,11 @@ public class WhoWriteApp extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        String GIT_URL = GitLink.WHOWA;
         switch (item.getItemId()) {
             case R.id.github:
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("https://github.com/merrymarst/KeyboardSamples/"));
+                intent.setData(Uri.parse(GIT_URL));
                 startActivity(intent);
                 return true;
             default:

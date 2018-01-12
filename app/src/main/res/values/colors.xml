@@ -31,6 +31,7 @@
     <color name="dot_light_screen4">#e4b5fc</color>
     <color name="background_navigation">#fff</color>
     <color name="icon_tint">#000</color>
+    <color name="bg_utamanya">#e6ffe6</color>
 
     <array name="array_dot_active">
         <item>@color/dot_light_screen1</item>

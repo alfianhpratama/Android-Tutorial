@@ -20,8 +20,6 @@ package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.DroidCafe;
  * limitations under the License.
  */
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -33,6 +31,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.GitLink;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
 /**
@@ -50,6 +49,7 @@ public class DroidCafe extends AppCompatActivity {
      *
      * @param savedInstanceState Saved instance.
      */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -88,6 +88,7 @@ public class DroidCafe extends AppCompatActivity {
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        String GIT_URL = GitLink.DROID;
         // Handle app bar item clicks here. The app bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
@@ -100,7 +101,7 @@ public class DroidCafe extends AppCompatActivity {
                 return true;
             case R.id.action_git:
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("https://github.com/merrymarst/KeyboardSamples/"));
+                intent.setData(Uri.parse(GIT_URL));
                 startActivity(intent);
                 return true;
             default:

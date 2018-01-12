@@ -1,8 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Android Tutorial</string>
+
     <string name="dibuka">Dibuka</string>
     <string name="ditutup">Ditutup</string>
-    <string name="dashboard">Dashboard</string>
+    <string name="dashboard">Dashbor</string>
     <string name="lesson_1">1. TwoActivity 1</string>
     <string name="lesson_2">2. KeyboardSample</string>
     <string name="lesson_3">3. PhoneNumberSpinner</string>
@@ -17,7 +18,7 @@
     <string name="lesson_12">12. NotifyMe</string>
     <string name="lesson_13">13. HelloSharedPref</string>
     <string name="lesson_14">14. WordListSql</string>
-    <string name="about_us">About Us</string>
+    <string name="about_us">Tentang Kami</string>
     <!-- Isi konten -->
     <string name="materi1">1.1 Memasang Android Studio.pdf</string>
     <string name="materi2">1.2 Menggunakan Layout.pdf</string>
@@ -107,8 +108,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="rate_us">Rate Us</string>
-    <string name="version">Version</string>
+    <string name="rate_us">Nilai Kami</string>
+    <string name="version">Versi</string>
     <string name="github_source_code">Github Source Code</string>
     <string name="title">Title</string>
     <string name="show">Show</string>

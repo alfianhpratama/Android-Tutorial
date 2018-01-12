@@ -18,6 +18,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.GitLink;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
 
@@ -82,10 +84,11 @@ public class TwoActivities extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        String GIT_URL = GitLink.TWOACT;
         switch (item.getItemId()) {
             case R.id.github:
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("https://github.com/merrymarst/KeyboardSamples/"));
+                intent.setData(Uri.parse(GIT_URL));
                 startActivity(intent);
                 return true;
             default:

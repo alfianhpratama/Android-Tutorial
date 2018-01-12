@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.GitLink;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
 public class GyroscopeSensor extends AppCompatActivity {
@@ -63,10 +64,11 @@ public class GyroscopeSensor extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        String GIT_URL = GitLink.GYROS;
         switch (item.getItemId()) {
             case R.id.github:
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("https://github.com/alfianhpratama/GyroscopeSensor/"));
+                intent.setData(Uri.parse(GIT_URL));
                 startActivity(intent);
                 return true;
             default:

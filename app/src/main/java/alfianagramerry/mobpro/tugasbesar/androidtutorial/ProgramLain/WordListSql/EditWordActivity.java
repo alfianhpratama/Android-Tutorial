@@ -1,6 +1,6 @@
 package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.WordListSql;
 
-/**
+/*
  * Edited by Agra on 08/01/2018.
  */
 
@@ -21,11 +21,16 @@ package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.WordListSq
  */
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.GitLink;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
 public class EditWordActivity extends AppCompatActivity {
@@ -47,7 +52,7 @@ public class EditWordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.wordlistsql_activity_edit_word);
 
-        mEditWordView = (EditText) findViewById(R.id.edit_word);
+        mEditWordView = findViewById(R.id.edit_word);
 
         // Get data sent from calling activity.
         Bundle extras = getIntent().getExtras();
@@ -78,6 +83,27 @@ public class EditWordActivity extends AppCompatActivity {
         replyIntent.putExtra(WordListAdapter.EXTRA_ID, mId);
         setResult(RESULT_OK, replyIntent);
         finish();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.git_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        String GIT_URL = GitLink.WLS;
+        switch (item.getItemId()) {
+            case R.id.github:
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(GIT_URL));
+                startActivity(intent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }
 

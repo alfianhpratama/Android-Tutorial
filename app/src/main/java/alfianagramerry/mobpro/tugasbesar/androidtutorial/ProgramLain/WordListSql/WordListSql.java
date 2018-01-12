@@ -1,6 +1,6 @@
 package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.WordListSql;
 
-/**
+/*
  * Edited by Agra on 08/01/2018.
  */
 
@@ -21,14 +21,20 @@ package alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.WordListSq
  */
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+
+import alfianagramerry.mobpro.tugasbesar.androidtutorial.ProgramLain.GitLink;
 import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
 
 /**
@@ -39,15 +45,11 @@ import alfianagramerry.mobpro.tugasbesar.androidtutorial.R;
  */
 public class WordListSql extends AppCompatActivity {
 
-    private static final String TAG = WordListSql.class.getSimpleName();
-
     public static final int WORD_EDIT = 1;
     public static final int WORD_ADD = -1;
 
     private WordListOpenHelper mDB;
-    private RecyclerView mRecyclerView;
     private WordListAdapter mAdapter;
-    private int mLastPosition;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -57,7 +59,7 @@ public class WordListSql extends AppCompatActivity {
         mDB = new WordListOpenHelper(this);
 
         // Create recycler view.
-        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview);
+        RecyclerView mRecyclerView = findViewById(R.id.recyclerview);
         // Create an mAdapter and supply the data to be displayed.
         mAdapter = new WordListAdapter(this, /* mDB.getAllEntries(),*/ mDB);
         // Connect the mAdapter with the recycler view.
@@ -66,7 +68,7 @@ public class WordListSql extends AppCompatActivity {
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         // Add a floating action click handler for creating new entries.
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -102,6 +104,27 @@ public class WordListSql extends AppCompatActivity {
                             Toast.LENGTH_LONG).show();
                 }
             }
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.git_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        String GIT_URL = GitLink.WLS;
+        switch (item.getItemId()) {
+            case R.id.github:
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(GIT_URL));
+                startActivity(intent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
     }
 }
